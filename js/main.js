@@ -1,9 +1,8 @@
 TRACKS = {
-  "anul_1": "Anul 1",
-  "anul_2": "Anul 2",
-  "anul_3": "Anul 3",
-  "anul_4": "Anul 4",
-  "master": "Master"
+  "anul_1":           "Anul 1",
+  "anul_2":           "Anul 2",
+  "anul_3":           "Anul 3",
+  "anul_4_si_master": "Anul 4 / Master"
 };
 
 function update_participants_table(raw_json, track) {

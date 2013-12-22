@@ -1,7 +1,7 @@
 import json
 from copy import deepcopy
 
-TRACKS = ['anul_1','anul_2','anul_3','anul_4','master']
+TRACKS = ['anul_1','anul_2','anul_3','anul_4_si_master']
 
 class FileContentsNotInJSONFormatError(Exception):
     pass
