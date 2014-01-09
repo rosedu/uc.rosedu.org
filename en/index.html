@@ -10,10 +10,10 @@
   <meta property="og:url" content="http://uc.rosedu.org/">
   <meta property="og:image" content="http://www.rosedu.org/resources/promo/uc_promo_banner.png">
   <title>Upstream Challenge</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/fontface.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/fontface.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
 </head>
 <body class="fullheight">
 <div class="flexboxlayout fullheight">
@@ -21,35 +21,35 @@
     <div class="row-fluid">
       <div class="span3" id="menu_wrapper">
         <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="images/transparent.png" below -->
-        <h2 id="menu_header" class="logotoppadding"><img id="uc_logo" src="images/transparent.png" style="max-width: 100%;"></h2>
+        <h2 id="menu_header" class="logotoppadding"><img id="uc_logo" src="../images/transparent.png" style="max-width: 100%;"></h2>
         <div id="menu">
           <ul style="font-family: 'OpenSansRegular';">
             <li class="ucmenuitem" data-id="#acasa">
-              <a href="#acasa">Acasă</a>
+              <a href="#acasa">Home</a>
             </li>
             <li class="ucmenuitem" data-id="#regulament">
-              <a href="#regulament">Regulament</a>
+              <a href="#regulament">Rules</a>
             </li>
             <li class="ucmenuitem" data-id="#proiecte">
-              <a href="#proiecte">Proiecte</a>
+              <a href="#proiecte">Projects</a>
             </li>
             <li class="ucmenuitem" data-id="#track_anul_1">
-              <a href="#track_anul_1">Track: Anul 1</a>
+              <a href="#track_anul_1">1st Year Track</a>
             </li>
             <li class="ucmenuitem" data-id="#track_anul_2">
-              <a href="#track_anul_2">Track: Anul 2</a>
+              <a href="#track_anul_2">2nd Year Track</a>
             </li>
             <li class="ucmenuitem" data-id="#track_anul_3">
-              <a href="#track_anul_3">Track: Anul 3</a>
+              <a href="#track_anul_3">3rd Year Track</a>
             </li>
             <li class="ucmenuitem" data-id="#track_anul_4_si_master">
-              <a href="#track_anul_4_si_master">Track: Anul 4 / Master</a>
+              <a href="#track_anul_4_si_master">4th Year/M.Sc. Track</a>
             </li>
             <li class="ucmenuitem" data-id="#meta">
               <a href="#meta">Meta</a>
             </li>
             <li>
-              <a href="en/">English</a>
+              <a href="../">Română</a>
             </li>
           </ul>
         </div> <!-- id="menu" -->
@@ -58,81 +58,78 @@
       <div class="main span8 offset1">
         <span id="top_of_content"></span>
         <div id="acasa_content" class="visualstate">
-          <h2 id="uc_heading" style="margin-top: 12px; margin-bottom: 20px;">Upstream Challenge este un concurs dedicat studenților pentru a încuraja contribuțiile în upstream la proiecte Open Source și pentru a promova și crește vizibilitatea acestora</h2>
-          <h3>Despre concurs</h3>
-          <p>În ultimii ani, contribuțiile în Open Source ale studenților din România sunt din în ce în ce mai vizibile. Cu sprijinul comunităților locale, al partenerilor din industrie și al oportunităților de forma Google Summer of Code, ROSEdu Summer of Code, etc., studenții își îmbunătățesc abilitățile de dezvoltare de aplicații, abilitățile colaborative și își cresc vizibilitatea activităților.</p>
-          <p>Pentru a stimula și mai mult contribuțiile, am dezvoltat și te încurajăm să participi la Upstream Challenge.</p>
-          <p>Concursul se va desfășura în perioada 1 martie - 15 septembrie 2014.</p>
+          <h2 id="uc_heading" style="margin-top: 12px; margin-bottom: 20px;">Upstream Challenge is a contest for students, aiming to encourage - and raise awareness of - their contributions to Open Source projects</h2>
+          <h3>About the contest</h3>
+          <p>Over the past few years, contributions to Open Source projects by undergraduate students have increasingly gained visibility. With support from local communities, industry partners and opportunities like Google Summer of Code, ROSEdu Summer of Code etc. students advance their programming as well as teamwork skills.</p>
+          <p>To further stimulate ongoing contributions, we have created - and encourage you to participate in - the Upstream Challenge.</p>
+          <p>The contest will run from the 1st of March through the 15th of September 2014.</p>
           <br>
-          <h3>Cum participi?</h3>
-          <p>Citește regulamentul, lista de proiecte și secțiunea de resurse utile.</p>
+          <h3>How do I participate?</h3>
+          <p>Read the rules, the project list and the Meta page.</p>
           <p>
-            Pentru a participa la concurs trebuie să te înscrii pe lista de discuții după care să:<br>
-            - identifici un bug;<br>
-            - rezolvi bug-ul;<br>
-            - trimiți detaliile rezolvării bug-ului pe lista de discuții.<br>
-            În continuare, pentru următoarele contribuții vei repeta cei 3 pași de mai sus.
+            To enter the challenge you will have to subscribe to the mailing list and then:<br>
+            - identify a bug;<br>
+            - solve the bug;<br>
+            - send an e-mail with the details of the bug and your patch.<br>
+            Repeat the three steps above for another bug.
           </p>
           <br>
-          <h3>Știri</h3>
+          <h3>News</h3>
           <p>Stay tuned.</p>
         </div> <!-- id="acasa_content" -->
 
         <div id="regulament_content" class="visualstate">
-          <h3>Regulament Upstream Challenge</h3>
-          <p><strong>Durată</strong></p>
-          <p>Concursul se va desfășura în perioada 1 martie - 15 septembrie 2014.</p>
-          <p><strong>Participanți</strong></p>
-          <p>Concursul se adresează studenților din ciclurile licență și master de la toate instituțiile de învățământ superior din România. Persoanele afiliate sponsorilor (angajați, sponsorizați pentru proiectele de diplomă etc.) cât și persoanele plătite (angajați) pentru a susține un anumit proiect open source vor putea participa pentru statistici dar NU vor fi eligibile pentru obținerea de premii.</p>
-          <p><strong>Structură</strong></p>
+          <h3>Rules</h3>
+          <p><strong>Duration</strong></p>
+          <p>The contest will run from the 1st of March through the 15th of September 2014.</p>
+          <p><strong>Participants</strong></p>
+          <p>Any Romanian undergraduate or master level student may enter the contest. Persons affiliated with the sponsors (e.g. employees) and persons who are remunerated to contribute to an open source project may participate but will not be eligible to win any prize.</p>
+          <p><strong>Structure</strong></p>
           <p>
-            Concursul este structurat pe 4 track-uri pentru a încuraja participarea tuturor studenților.<br>
-            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_1">Anul 1</a><br>
-            - <a href="#track_anul_2" class="ucmenuitem" data-id="#track_anul_2">Anul 2</a><br>
-            - <a href="#track_anul_3" class="ucmenuitem" data-id="#track_anul_3">Anul 3</a><br>
-            - <a href="#track_anul_4_si_master" class="ucmenuitem" data-id="#track_anul_4_si_master">Anul 4 / Master</a>
+            The challenge is split into 4 tracks, in order to encourage all students to participate.<br>
+            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_1">1st Year</a><br>
+            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_2">2nd Year</a><br>
+            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_3">3rd Year</a><br>
+            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_4_si_master">4th Year/M.Sc.</a><br>
           </p>
-          <p><strong>Proiecte acceptate</strong></p>
-          <p>Se vor accepta contribuții upstream pentru proiectele care au un release public cel târziu pe 30 septembrie 2013.</p>
-          <p>Proiectele acceptate trebuie să fie Open Source și să nu fie implicate în probleme de legalitate cu alte proiecte sau firme existente (fără reverse engineering, probleme de licențiere etc.)</p>
-          <p>Se vor evalua proiectele și calitativ, în funcție de complexitate și număr de utilizatori.</p>
-          <p>În cazul în care nu se știe dacă proiectul se încadrează în aceste restricții, se poate întreba pe <a href="http://lists.rosedu.org/listinfo/upstream-challenge" target="_blank">upstream-challenge@lists.rosedu.org</a></p>
-          <p>Pe site, există o <a href="#proiecte" class="ucmenuitem" data-id="#proiecte">listă de proiecte sugerate</a>, care va fi completată pe măsură ce apar proiecte noi.</p>
-          <p><strong>Desfășurare</strong></p>
-          <p>Pe durata participării la concurs, studentul va urmări următorul workflow:</p>
+          <p><strong>Project eligibility</strong></p>
+          <p>The open source project that you contribute to must have had at least one public release prior to the 1st of September 2013.</p>
+          <p>The project must be Open Source and may not be encumbered by any legal issues with other projects or entities (e.g. reverse engineering projects are precluded).</p>
+          <p>A project's complexity and the size of its user base will also be taken into consideration when deciding eligibility.</p>
+          <p>Should you have doubts about the project's compliance with these requirements, please send an e-mail to <a href="http://lists.rosedu.org/listinfo/upstream-challenge" target="_blank">upstream-challenge@lists.rosedu.org</a>.</p>
+          <p>There is a list of suggested projects on <a href="#proiecte" class="ucmenuitem" data-id="#proiecte">a dedicated page</a> on this site.</p>
+          <p><strong>Operating procedures during the contest</strong></p>
+          <p>During the challenge, the student must observe the following workflow:</p>
           <ol>
-            <li>identifică un proiect și un bug/feature la care vrea să lucreze</li>
-            <li>rezolvă bug-ul/feature request-ul</li>
-            <li>trimite contribuția către upstream</li>
-            <li>cel târziu la o săptămână după trimiterea contribuției upstream, va trimite un mail la <a href="http://lists.rosedu.org/listinfo/upstream-challenge" target="_blank">upstream-challenge@lists.rosedu.org</a> conținând link către lista de commit-uri din cadrul patch-ului. Organizatorii vor urmări evoluția patch-ului din momentul în care acest mail este trimis.</li>
+            <li>identify a bug/feature</li>
+            <li>solve the bug/feature request</li>
+            <li>send the contribution upstream</li>
+            <li>send an email to <a href="http://lists.rosedu.org/listinfo/upstream-challenge" target="_blank">upstream-challenge@lists.rosedu.org</a> no later than 7 days after submitting the contribution upstream. The e-mail must contain a link to the commits.</li>
           </ol>
-          <p>Fiecare track are câte un responsabil care va urmări această listă și va actualiza paginile track-urilor, unde sunt listate contribuțiile participanților. Aceaste actualizări vor fi făcute în cel mult o săptămână de la trimiterea mail-ului sau schimbarea stării patch-ului.</p>
-          <p>Dacă mail-ul cu lista de commit-uri nu este trimis în intervalul de o săptămână de la trimiterea upstream atunci contribuția nu mai face parte din concurs și nu va participa la evaluarea finală.</p>
-          <p><strong>Reguli evaluare patch</strong></p>
-          <p>Patch-urile trimise de participanți vor fi evaluate luând în calcul:</p>
+          <p>Each track has a designated person-in-charge, who is responsible for keeping up-to-date records of contributions from participants. Updates will be published on this website no later than 7 days after the e-mail has been received or the patch has been applied upstream.</p>
+          <p>If the e-mail containing the list of commits isn't sent in due time, the contribution will not be counted towards the final evaluation.</p>
+          <p><strong>Rules for evaluating a patch</strong></p>
+          <p>Patches sent by each participant will be evaluated by taking into account:</p>
           <ul>
-            <li>importanța bugului</li>
-            <li>dificultatea bugului</li>
-            <li>numărul de utilizatori afectați</li>
-            <li>activitatea studentului pe canalele proiectului (IRC, liste discuții) pe durata contribuției</li>
-            <li>consecvența studentului: preferăm contribuții consistente la același proiect în defavoarea unor contribuții punctuale la mai multe proiecte</li>
+            <li>the importance of the bug</li>
+            <li>the difficulty in solving the bug</li>
+            <li>the number of users affected</li>
+            <li>the participant's activity on IRC and on the mailing list</li>
+            <li>consistency - we favor a stream of consistent contributions to the same project during the contest, over contributions scattered across several projects. Submitting patches to multiple projects will result in lower rankings</li>
           </ul>
-          <p>NU va intra în evaluare promovarea activității prin <a href="http://techblog.rosedu.org/" target="_blank">ROSEdu TechBlog</a> sau <a href="http://talks.rosedu.org/" target="_blank">ROSEdu TechTalks</a>.</p>
-          <p><strong>Premii</strong></p>
+          <p><strong>Prizes</strong></p>
 <!--
           <p hidden>Pentru fiecare dintre cele 5 track-uri, marele premiu va fi câte un ... în valoare de ... oferit de Intel România, sponsor principal.</p>
 -->
-          <p>Pe lângă marele premiu, vor exista premii speciale din partea sponsorilor pentru contribuții semnificative. Aceste premii pot fi globale, per track sau per proiect, la discreția celor care le oferă.</p>
-          <p>Organizatorii și sponsorii nu se obligă să ofere garanție premiilor acordate.</p>
+          <p>Besides the Grand Prize, there will be special prizes offered by sponsors for significant contributions. These prizes may be global, per track or per project.</p>
+          <p>The organizers and sponsors may not offer warranty for the prizes.</p>
         </div> <!-- id="regulament_content" -->
 
         <div id="proiecte_content" class="visualstate">
           <table class="table">
             <tr>
               <td colspan=2>
-                <h3>Proiecte</h3>
-                <br>
-                <strong>Aici aveți o listă de proiecte acceptate. Puteți contribui și la alte proiecte, vor fi adăugate aici în timp. Consultați regulamentul pentru detalii.</strong>
+                <h3>Suggested Projects</h3>
                 <br>
                 <br>
               </td>
@@ -183,7 +180,7 @@
             <tr>
               <td colspan=2>
                 <br>
-                <strong>Alte proiecte vor fi anunțate în timp.</strong>
+                <strong>Other projects will be added to the list as time goes on.</strong>
               </td>
             </tr>
           </table>
@@ -193,10 +190,10 @@
           <table id="anul_1_table" class="table">
             <tr>
               <td colspan=2>
-                <h3>Track: Anul 1</h3>
+                <h3>1st Year Track</h3>
                 <br>
                 <strong>
-                  La acest track încă nu sunt contribuții acceptate.
+                  This track does not yet have any contributions.
                 </strong>
 <!--
                 <strong>
@@ -216,10 +213,10 @@
           <table id="anul_2_table" class="table">
             <tr>
               <td colspan=2>
-                <h3>Track: Anul 2</h3>
+                <h3>2nd Year Track</h3>
                 <br>
                 <strong>
-                  La acest track încă nu sunt contribuții acceptate.
+                  This track does not yet have any contributions.
                 </strong>
 <!--
                 <strong>
@@ -239,10 +236,10 @@
           <table id="anul_3_table" class="table">
             <tr>
               <td colspan=2>
-                <h3>Track: Anul 3</h3>
+                <h3>3rd Year Track</h3>
                 <br>
                 <strong>
-                  La acest track încă nu sunt contribuții acceptate.
+                  This track does not yet have any contributions.
                 </strong>
 <!--
                 <strong>
@@ -262,10 +259,10 @@
           <table id="anul_4_si_master_table" class="table">
             <tr>
               <td colspan=2>
-                <h3>Track: Anul 4 / Master</h3>
+                <h3>4th Year/M.Sc. Track</h3>
                 <br>
                 <strong>
-                  La acest track încă nu sunt contribuții acceptate.
+                  This track does not yet have any contributions.
                 </strong>
 <!--
                 <strong>
@@ -283,38 +280,36 @@
 
         <div id="meta_content" class="visualstate">
           <h3>Meta</h3>
-          <p><strong>Resurse utile</strong></p>
+          <p><strong>Useful links</strong></p>
           <p>
-            Contribuțiile participanților, defalcate pe track-uri:<br>
-            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_1">Anul 1</a><br>
-            - <a href="#track_anul_2" class="ucmenuitem" data-id="#track_anul_2">Anul 2</a><br>
-            - <a href="#track_anul_3" class="ucmenuitem" data-id="#track_anul_3">Anul 3</a><br>
-            - <a href="#track_anul_4_si_master" class="ucmenuitem" data-id="#track_anul_4_si_master">Anul 4 / Master</a>
+            Contributions by track:<br>
+            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_1">1st Year</a><br>
+            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_2">2nd Year</a><br>
+            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_3">3rd Year</a><br>
+            - <a href="#track_anul_1" class="ucmenuitem" data-id="#track_anul_4_si_master">4th Year/M.Sc.</a><br>
           </p>
-          <p><a href="#proiecte" class="ucmenuitem" data-id="#proiecte">Lista proiectelor propuse</a></p>
-          <p>Lista publică de discuții: <a href="http://lists.rosedu.org/listinfo/upstream-challenge" target="_blank">upstream-challenge@lists.rosedu.org</a></p>
-          <p>Lista comunității de kernel: <a href="http://lists.rosedu.org/listinfo/firefly" target="_blank">firefly@lists.rosedu.org</a> (pentru discuțiile legate de kernel development)</p>
-          <p>Paginile de <a href="https://www.facebook.com/UpstreamChallenge" target="_blank">Facebook</a> și <a href="https://plus.google.com/u/0/b/113601665378127579242/113601665378127579242/posts" target="_blank">Google+</a> ale concursului</p>
-          <p><strong>Suport pentru studenți</strong></p>
-          <p>Pentru a încuraja participarea la concurs, se vor organiza workshop-uri despre folosirea unor instrumente precum git, issue tracker, submisii de patch-uri, etc. Toate acestea vor fi anunțate pe paginile <a href="https://www.facebook.com/UpstreamChallenge" target="_blank">Facebook</a> și <a href="https://plus.google.com/u/0/b/113601665378127579242/113601665378127579242/posts" target="_blank">Google+</a> asociate precum și în secțiunea de știri de pe pagina principală a acestui site.</p>
-          <p>Studenții pot pune întrebări legate de development pe listele <a href="http://lists.rosedu.org/listinfo/upstream-challenge" target="_blank">upstream-challenge@lists.rosedu.org</a> și <a href="http://lists.rosedu.org/listinfo/firefly" target="_blank">firefly@lists.rosedu.org</a> sau pe paginile de <a href="https://www.facebook.com/UpstreamChallenge" target="_blank">Facebook</a> sau <a href="https://plus.google.com/u/0/b/113601665378127579242/113601665378127579242/posts" target="_blank">Google+</a> ale concursului.</p>
-          <p>Participanții sunt încurajați să împărtășească prin <a href="http://techblog.rosedu.org/" target="_blank">ROSEdu Techblog</a> sau <a href="http://talks.rosedu.org/" target="_blank">ROSEdu TechTalks</a> cunoștințele acumulate în timpul realizării unei contribuții.</p>
-          <p><strong>Ediții anterioare</strong></p>
+          <p><a href="#proiecte" class="ucmenuitem" data-id="#proiecte">List of suggested projects</a></p>
+          <p>Public mailing list: <a href="http://lists.rosedu.org/listinfo/upstream-challenge" target="_blank">upstream-challenge@lists.rosedu.org</a></p>
+          <p>Kernel-focused mailing list: <a href="http://lists.rosedu.org/listinfo/firefly" target="_blank">firefly@lists.rosedu.org</a></p>
+          <p><a href="https://www.facebook.com/UpstreamChallenge" target="_blank">Facebook</a> and <a href="https://plus.google.com/u/0/b/113601665378127579242/113601665378127579242/posts" target="_blank">Google+</a> pages</p>
+          <p><strong>Student support</strong></p>
+          <p>To support the challenge, we will organize workshops about git, issue trackers and patch submission. These will be announced on our <a href="https://www.facebook.com/UpstreamChallenge" target="_blank">Facebook</a> and <a href="https://plus.google.com/u/0/b/113601665378127579242/113601665378127579242/posts" target="_blank">Google+</a> pages.</p>
+          <p>Students may ask development-related questions on the <a href="http://lists.rosedu.org/listinfo/upstream-challenge" target="_blank">upstream-challenge@lists.rosedu.org</a> and <a href="http://lists.rosedu.org/listinfo/firefly" target="_blank">firefly@lists.rosedu.org</a> mailing lists or on the <a href="https://www.facebook.com/UpstreamChallenge" target="_blank">Facebook</a> and <a href="https://plus.google.com/u/0/b/113601665378127579242/113601665378127579242/posts" target="_blank">Google+</a> pages.</p>
+          <p>Students are encouraged to share their experience during a contribution through <a href="http://techblog.rosedu.org/" target="_blank">ROSEdu Techblog</a> or <a href="http://talks.rosedu.org/" target="_blank">ROSEdu TechTalks</a>.</p>
+          <p><strong>Previous editions</strong></p>
           <p>
-            <a href="http://elf.cs.pub.ro/so/wiki/upstream-challenge" target="_blank">Primăvară 2012</a>
+            <a href="http://elf.cs.pub.ro/so/wiki/upstream-challenge" target="_blank">2012</a>
             <br>
-            <a href="/past-editions/2013/" target="_blank">Primăvară 2013</a>
+            <a href="/past-editions/2013/" target="_blank">2013</a>
           </p>
 <!--
           <p><strong>Sponsorizare</strong></p>
           <p hidden>Concursul este sponsorizat de <a href="http://www.intel.com/" target="_blank">Intel România</a>. Consultați <a href="#regulament" class="ucmenuitem" data-id="#regulament">regulamentul</a> pentru detalii.</p>
 -->
-          <p><strong>Condiții și drepturi de folosire</strong></p>
-          <p>ROSEdu deține drepturile asupra întregului conținut al acestui site.
+          <p><strong>Copyright</strong></p>
+          <p>ROSEdu owns the rights to the entire contents of this website.
              <br>
-             ROSEdu, în calitate de deținător al drepturilor de autor, eliberează conținutul acestui site sub licența <a href="http://www.gnu.org/licenses/fdl-1.2.html" target="_blank">GNU Free Documentation License v1.2</a>. În acest sens, accesul, distribuția și modificarea conținutului sunt libere, cu condiția păstrării autorilor inițiali. Se recomandă folosirea sintagmei "Documentație originală scrisă de membrii asociației studențești ROSEdu".
-             <br>
-             Pentru informații suplimentare, te așteptăm pe <a href="http://lists.rosedu.org/listinfo/rosedu-general" target="_blank">lista generală a ROSEdu</a> sau pe <a href="irc://irc.freenode.net">canalul IRC #rosedu</a>.
+             ROSEdu releases this material under the <a href="http://www.gnu.org/licenses/fdl-1.2.html" target="_blank">GNU Free Documentation License v1.2</a>.
           </p>
         </div> <!-- id="meta_content" -->
 
@@ -351,37 +346,37 @@
 
         <p class="extra_buttons" id="tap_target_acasa">
           <button class="btn greybutton ucmenuitem" data-id="#acasa">
-            <strong>Acasă</strong>
+            <strong>Home</strong>
           </button>
         </p>
         <p class="extra_buttons">
           <button class="btn greybutton ucmenuitem" data-id="#regulament">
-            <strong>Regulament</strong>
+            <strong>Rules</strong>
           </button>
         </p>
         <p class="extra_buttons">
           <button class="btn greybutton ucmenuitem" data-id="#proiecte">
-            <strong>Proiecte</strong>
+            <strong>Projects</strong>
           </button>
         </p>
         <p class="extra_buttons">
           <button class="btn greybutton ucmenuitem" data-id="#track_anul_1">
-            <strong>Track: Anul 1</strong>
+            <strong>1st Year Track</strong>
           </button>
         </p>
         <p class="extra_buttons">
           <button class="btn greybutton ucmenuitem" data-id="#track_anul_2">
-            <strong>Track: Anul 2</strong>
+            <strong>2nd Year Track</strong>
           </button>
         </p>
         <p class="extra_buttons">
           <button class="btn greybutton ucmenuitem" data-id="#track_anul_3">
-            <strong>Track: Anul 3</strong>
+            <strong>3rd Year Track</strong>
           </button>
         </p>
         <p class="extra_buttons">
           <button class="btn greybutton ucmenuitem" data-id="#track_anul_4_si_master">
-            <strong>Track: Anul 4 / Master</strong>
+            <strong>4th Year/M.Sc. Track</strong>
           </button>
         </p>
         <p class="extra_buttons">
@@ -390,9 +385,9 @@
           </button>
         </p>
         <p class="extra_buttons">
-          <a href="en/">
+          <a href="../">
             <button class="btn greybutton">
-              <strong>English</strong>
+              <strong>Română</strong>
             </button>
           </a>
         </p>
@@ -428,7 +423,7 @@
     <td><!-- <%= contribution_impact_score %> -->&nbsp;</td>
   </tr>
 </script>
-<script src="js/zepto.min.js"></script>
-<script src="js/underscore.min.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/underscore.min.js"></script>
 <script src="js/main.js"></script>
 
