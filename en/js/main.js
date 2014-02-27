@@ -1,3 +1,6 @@
+PUSH_TO_HISTORY        = true
+DO_NOT_PUSH_TO_HISTORY = false
+
 TRACKS = {
   "anul_1":           "Anul 1",
   "anul_2":           "Anul 2",
@@ -75,7 +78,7 @@ function update_contributions_page(raw_json, participant_id, track) {
   $.ajax(ajax_options);
 }
 
-function navigate(visualstate) {
+function navigate(visualstate, push) {
 
   if (visualstate.substring(0,7) === "#track_") {
     $(".participant").remove();
@@ -132,18 +135,22 @@ function navigate(visualstate) {
   }
 
   var base_url = window.location.href.split("#")[0];
-  history.pushState(css_selector_to_display, "/", base_url + visualstate);
+  if (push) {
+    history.pushState(css_selector_to_display, "/", base_url + visualstate);
+  } else {
+    history.replaceState(css_selector_to_display, "/", base_url + visualstate);
+  }
 }
 
 $(".ucmenuitem").on("click", function(e) {
   e.preventDefault();
   var target_visualstate = $(this).data("id");
-  navigate(target_visualstate);
+  navigate(target_visualstate, PUSH_TO_HISTORY);
 });
 
 $("#menu_header").on("click", function(e) {
   e.preventDefault();
-  navigate("#acasa");
+  navigate("#acasa", PUSH_TO_HISTORY);
 });
 
 $(window).on("popstate", function(event) {
@@ -162,13 +169,14 @@ $(window).on("popstate", function(event) {
 Zepto(function($) {
   var visualstate = "#" + window.location.href.split("#")[1];
   if ( $(visualstate + "_content")[0] || visualstate.substring(0,13) === "#participant_") {
-    navigate(visualstate);
+    navigate(visualstate, DO_NOT_PUSH_TO_HISTORY);
   } else {
-    navigate("#acasa");
+    navigate("#acasa", DO_NOT_PUSH_TO_HISTORY);
   }
 
   var all_images = {
     "#uc_logo":         "../images/logos/uc_logo.png",
+    "#mozilla_logo":    "../images/logos/mozilla_logo.png",
     "#arrow_hover":     "../images/arrow-hover.png",
     "#blue_gradient":   "../images/blue-gradient.png"
   };
