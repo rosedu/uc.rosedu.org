@@ -176,7 +176,7 @@ Zepto(function($) {
 
   var all_images = {
     "#uc_logo":         "../images/logos/uc_logo.png",
-    "#mozilla_logo":    "../images/logos/mozilla_logo.png",
+    ".mozilla_logo":    "../images/logos/mozilla_logo.png",
     "#arrow_hover":     "../images/arrow-hover.png",
     "#blue_gradient":   "../images/blue-gradient.png"
   };
