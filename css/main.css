@@ -91,7 +91,7 @@ a {
             background-image: url("../images/arrow-hover.png"), url("../images/blue-gradient.png");
             background-repeat: no-repeat, repeat-x;
             background-position: right center, left bottom;
-            color: white;
+            color: white; }
           .wrapper #menu_wrapper ul li a:active {
             background-color: #4444ff;
             background-image: url("../images/arrow-hover.png"), url("../images/blue-gradient.png");
