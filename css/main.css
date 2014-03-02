@@ -87,14 +87,13 @@ a {
               padding-top: 7px;
               padding-bottom: 7px; } }
           .wrapper #menu_wrapper ul li a:hover, .wrapper #menu_wrapper ul li a.highlight {
-            background-color: #69b373;
+            background-color: #4444ff;
             background-image: url("../images/arrow-hover.png"), url("../images/blue-gradient.png");
             background-repeat: no-repeat, repeat-x;
             background-position: right center, left bottom;
             color: white;
-            border-top-color: #69b373; }
           .wrapper #menu_wrapper ul li a:active {
-            background-color: #69b373;
+            background-color: #4444ff;
             background-image: url("../images/arrow-hover.png"), url("../images/blue-gradient.png");
             background-repeat: no-repeat, repeat-x;
             background-position: right center, left top; }
