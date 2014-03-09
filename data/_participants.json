@@ -1,9 +1,9 @@
 [
   { "id":         "participant_001",
-    "first_name": "",
-    "last_name":  "",
-    "track":      "",
-    "file":       ".json" },
+    "first_name": "Calin",
+    "last_name":  "Cruceru",
+    "track":      "anul_1",
+    "file":       "calin_cruceru.json" },
 
   { "id":         "participant_002",
     "first_name": "",
