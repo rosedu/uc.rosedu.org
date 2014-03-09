@@ -6,10 +6,10 @@
     "file":       "calin_cruceru.json" },
 
   { "id":         "participant_002",
-    "first_name": "",
-    "last_name":  "",
-    "track":      "",
-    "file":       ".json" },
+    "first_name": "Veaceslav",
+    "last_name":  "Munteanu",
+    "track":      "anul_4_si_master",
+    "file":       "veaceslav_munteanu.json" },
 
   { "id":         "participant_003",
     "first_name": "",
