@@ -110,7 +110,7 @@ if __name__ == '__main__':
             global_stats_hash[track_participants_key] = []
         if len(track_participants_list) > 1:
             global_stats_hash[track_participants_key] = \
-                sorted(track_participants_list, key = lambda d: (-d['overall_score'], d['last_name']))
+                sorted(track_participants_list, key = lambda d: (-d['overall_score'], d['first_name']))
 
     file_to_write_to = 'data/generated/global_stats.json'
     dump_to_file(file_to_write_to, global_stats_hash)
