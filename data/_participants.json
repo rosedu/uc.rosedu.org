@@ -42,10 +42,10 @@
     "file":       "matei_oprea.json" },
 
   { "id":         "participant_008",
-    "first_name": "",
-    "last_name":  "",
-    "track":      "",
-    "file":       ".json" },
+    "first_name": "Iulian",
+    "last_name":  "Matesica",
+    "track":      "anul_1",
+    "file":       "iulian_matesica.json" },
 
   { "id":         "participant_009",
     "first_name": "",
