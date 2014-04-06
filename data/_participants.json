@@ -60,10 +60,10 @@
     "file":       "iulian_radu.json" },
 
   { "id":         "participant_011",
-    "first_name": "",
-    "last_name":  "",
-    "track":      "",
-    "file":       ".json" },
+    "first_name": "Nicu",
+    "last_name":  "Badescu",
+    "track":      "anul_2",
+    "file":       "nicu_badescu.json" },
 
   { "id":         "participant_012",
     "first_name": "",
