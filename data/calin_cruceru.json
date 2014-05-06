@@ -64,15 +64,15 @@
     "patch_url":        "https://bugs.kde.org/show_bug.cgi?id=334285",
     "difficulty_score": "0",
     "impact_score":     "0" },
-  { "date":             "",
-    "project":          "",
-    "patch_url":        "",
-    "difficulty_score": "",
-    "impact_score":     "" },
- { "date":             "",
-    "project":          "",
-    "patch_url":        "",
-    "difficulty_score": "",
-    "impact_score":     "" }
+  { "date":             "03/05/2014",
+    "project":          "Marble KDE",
+    "patch_url":        "http://commits.kde.org/marble/aca87777c4c48120bc85837d1f0abf16035b2015",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "04/05/2014",
+    "project":          "Marble KDE",
+    "patch_url":        "http://commits.kde.org/marble/8576b4de1e4609310d690d7e1f680d8b2db85576",
+    "difficulty_score": "0",
+    "impact_score":     "0" }
 ]
 
