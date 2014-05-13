@@ -101,7 +101,7 @@
     "impact_score":     "0" },
   { "date":             "13/05/2014",
     "project":          "Marble KDE",
-    "patch_url":        "http://commits.kde.org/marble/afe1bd60310a56a56c6dc6e410f9f503cf68c19b",
+    "patch_url":        "http://commits.kde.org/marble/47b087ad939b2f4ea70b06da74dd19ad5c097637",
     "difficulty_score": "0",
     "impact_score":     "0" }
 ]
