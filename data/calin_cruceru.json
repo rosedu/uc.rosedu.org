@@ -88,6 +88,11 @@
     "project":          "Marble KDE",
     "patch_url":        "http://commits.kde.org/marble/62a88c28a70478196ad8600cf28200d0dc7d3f2a",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "13/05/2014",
+    "project":          "Marble KDE",
+    "patch_url":        "http://commits.kde.org/marble/afe1bd60310a56a56c6dc6e410f9f503cf68c19b",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
 
