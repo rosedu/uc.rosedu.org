@@ -3,6 +3,8 @@ from copy import deepcopy
 
 TRACKS = ['anul_1','anul_2','anul_3','anul_4_si_master']
 
+global_link_to_file_dictionary = {}
+
 class FileContentsNotInJSONFormatError(Exception):
     pass
 
@@ -48,8 +50,28 @@ def participant_record_with_extra_stats(participant):
 
     contrib_count = 0
     overall_score = 0.0
+
     for contribution in contribution_records:
+
         if contribution['date']:
+
+            # Check whether or not the curent contribution URL is already taken
+            # Maintain the global dictionary which makes that check possible
+            patch_url = contribution['patch_url']
+            if patch_url in global_link_to_file_dictionary:
+                previous_file_for_patch_url = global_link_to_file_dictionary[patch_url]
+                print
+                print "A duplicate contribution URL was found!"
+                print "Link:"
+                print patch_url
+                print "Found in file:"
+                print previous_file_for_patch_url
+                print "And in file:"
+                print file_to_read_from
+                print
+            global_link_to_file_dictionary[patch_url] = file_to_read_from
+
+            # Incrementally build the stats
             contrib_count += 1
             difficulty_score = \
                 float(contribution['difficulty_score']) if contribution['difficulty_score'] else 0.0
