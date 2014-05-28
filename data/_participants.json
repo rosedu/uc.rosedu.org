@@ -90,10 +90,10 @@
     "file":       "andrei_vaduva.json" },
 
   { "id":         "participant_016",
-    "first_name": "",
-    "last_name":  "",
-    "track":      "",
-    "file":       ".json" },
+    "first_name": "Mihai",
+    "last_name":  "Varga",
+    "track":      "anul_2",
+    "file":       "mihai_varga.json" },
 
   { "id":         "participant_017",
     "first_name": "",
