@@ -108,6 +108,16 @@
     "project":          "Marble KDE",
     "patch_url":        "http://commits.kde.org/marble/177370067498b0229881c8fe2ceba099509f5750",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "20/06/2014",
+    "project":          "Marble KDE",
+    "patch_url":        "http://commits.kde.org/marble/b6f53e7e0808eb1a5e79cc6b236111ce3bbc831b",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "20/06/2014",
+    "project":          "Marble KDE",
+    "patch_url":        "http://commits.kde.org/marble/4ebe0cb4a070a125daac0c8e4d37a3b4547a00c5",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
 
