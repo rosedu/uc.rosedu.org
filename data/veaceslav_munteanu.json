@@ -53,6 +53,21 @@
     "project":          "digiKam",
     "patch_url":        "http://quickgit.kde.org/?p=digikam.git&a=commit&h=e6f2bb48783fcdf3238be9caf151775d54262cd8",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "18/06/2014",
+    "project":          "digiKam",
+    "patch_url":        "http://quickgit.kde.org/?p=digikam.git&a=commit&h=a1f038468c56a9d9a6006020c6e948856396f5d5",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "18/06/2014",
+    "project":          "digiKam",
+    "patch_url":        "http://quickgit.kde.org/?p=digikam.git&a=commit&h=77a5d9cc0edb58a5ee0e5c61b5630a56756237e7",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "18/06/2014",
+    "project":          "digiKam",
+    "patch_url":        "http://quickgit.kde.org/?p=digikam.git&a=commit&h=93d78a527bd10cd4e7421858e4ace1f35d70bc91",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
 
