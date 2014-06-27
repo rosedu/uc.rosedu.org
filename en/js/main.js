@@ -128,6 +128,12 @@ function navigate(visualstate, push) {
     document.body.scrollIntoView();
   }
 
+  if (visualstate === "#acasa") {
+    $("#front_page_logos").show();
+  } else {
+    $("#front_page_logos").hide();
+  }
+
   if (visualstate !== "#acasa" && $("#menu").css("display") === "none") {
     $("#tap_target_acasa").show();
   } else {
@@ -175,11 +181,13 @@ Zepto(function($) {
   }
 
   var all_images = {
-    "#uc_logo":         "../images/logos/uc_logo.png",
-    ".intel_logo":      "../images/logos/intel_logo.png",
-    ".mozilla_logo":    "../images/logos/mozilla_logo.png",
-    "#arrow_hover":     "../images/arrow-hover.png",
-    "#blue_gradient":   "../images/blue-gradient.png"
+    "#uc_logo":                 "../images/logos/uc_logo.png",
+    ".intel_logo":              "../images/logos/intel_logo.png",
+    ".mozilla_logo":            "../images/logos/mozilla_logo.png",
+    ".intel_logo_front_page":   "../images/logos/intel_logo_front_page.png",
+    ".mozilla_logo_front_page": "../images/logos/mozilla_logo_front_page.png",
+    "#arrow_hover":             "../images/arrow-hover.png",
+    "#blue_gradient":           "../images/blue-gradient.png"
   };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);
