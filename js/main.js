@@ -8,6 +8,19 @@ TRACKS = {
   "anul_4_si_master": "Anul 4 / Master"
 };
 
+function ajax_update(url, callback, args) {
+  var ajax_options = {
+    type: "GET",
+    url: url + Math.round(new Date().getTime()),
+    dataType: "text",
+    success: function(raw_json) { 
+        args.splice(0,0, raw_json);
+        callback.apply(null, args);
+    }
+  };
+  $.ajax(ajax_options);
+}
+
 function update_participants_table(raw_json, track) {
   var data_set = JSON.parse(raw_json);
   var track_contrib_count_key = track + "_contrib_count";
@@ -69,13 +82,7 @@ function update_contributions_page(raw_json, participant_id, track) {
   $("#participant_track").text(TRACKS[participant.track]);
   $("#participant_contrib_count").text(participant.contrib_count);
   $("#participant_overall_score").text(participant.overall_score);
-  var ajax_options = {
-    type: "GET",
-    url: "/data/" + participant.file + "?" + Math.round(new Date().getTime()),
-    dataType: "text",
-    success: update_contributions_table
-  };
-  $.ajax(ajax_options);
+  ajax_update("/data/" + participant.file + "?", update_contributions_table, []);
 }
 
 function navigate(visualstate, push) {
@@ -84,13 +91,7 @@ function navigate(visualstate, push) {
     $(".participant").remove();
 
     var track = visualstate.substring(7);
-    var ajax_options = {
-      type: "GET",
-      url: "/data/generated/global_stats.json?" + Math.round(new Date().getTime()),
-      dataType: "text",
-      success: function(raw_json) { update_participants_table(raw_json, track); }
-    };
-    $.ajax(ajax_options);
+    ajax_update("/data/generated/global_stats.json?", update_participants_table, [track]);
   }
 
   if (visualstate.substring(0,13) === "#participant_") {
@@ -104,13 +105,7 @@ function navigate(visualstate, push) {
 
     var participant_id = visualstate.substring(1,16);
     var track          = visualstate.substring(17);
-    var ajax_options = {
-      type: "GET",
-      url: "/data/generated/global_stats.json?" + Math.round(new Date().getTime()),
-      dataType: "text",
-      success: function(raw_json) { update_contributions_page(raw_json, participant_id, track); }
-    };
-    $.ajax(ajax_options);
+    ajax_update("/data/generated/global_stats.json?", update_contributions_page, [participant_id, track]);
   }
 
   $(".visualstate").hide();
