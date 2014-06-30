@@ -41,7 +41,7 @@ function update_participants_table(raw_json, track) {
   $(".participant_contributions_link").on("click", function(e) {
     e.preventDefault();
     var target_visualstate = $(this).data("id");
-    navigate(target_visualstate);
+    navigate(target_visualstate, PUSH_TO_HISTORY);
   });
 }
 
@@ -158,6 +158,29 @@ $(window).on("popstate", function(event) {
   if (typeof event.state === "string") {
     $(".visualstate").hide();
     $(event.state).css({"display": "block", "opacity": 0}).animate({"opacity": 1}, 250);
+
+    var hash = window.location.hash;
+    if (hash.substring(0,6) === "#track") {
+      var track = hash.split("#track_")[1];
+      if ($("#" + track + "_table tr").length == 1) {
+        // if the participants table is empty
+        ajax_update("/data/generated/global_stats.json?", update_participants_table, [track]);
+      }
+    }
+
+    if (hash.substring(0,13) === "#participant_") {
+      $("#participant_error").hide();
+      $("#participant_success").hide();
+      $("#participant_full_name").empty();
+      $("#participant_track").empty();
+      $("#participant_contrib_count").empty();
+      $("#participant_overall_score").empty();
+      $(".contribution").remove();
+
+      var participant_id = hash.substring(1,16);
+      var track = hash.substring(17);
+      ajax_update("/data/generated/global_stats.json?", update_contributions_page, [participant_id, track]);
+    }
 
     if ($("#menu").css("display") === "none") {
       $("#uc_heading").hide();
