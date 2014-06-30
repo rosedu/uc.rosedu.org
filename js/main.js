@@ -8,6 +8,19 @@ TRACKS = {
   "anul_4_si_master": "Anul 4 / Master"
 };
 
+function ajax_update(url, callback, args) {
+  var ajax_options = {
+    type: "GET",
+    url: url + Math.round(new Date().getTime()),
+    dataType: "text",
+    success: function(raw_json) { 
+        args.splice(0,0, raw_json);
+        callback.apply(null, args);
+    }
+  };
+  $.ajax(ajax_options);
+}
+
 function update_participants_table(raw_json, track) {
   var data_set = JSON.parse(raw_json);
   var track_contrib_count_key = track + "_contrib_count";
@@ -28,7 +41,7 @@ function update_participants_table(raw_json, track) {
   $(".participant_contributions_link").on("click", function(e) {
     e.preventDefault();
     var target_visualstate = $(this).data("id");
-    navigate(target_visualstate);
+    navigate(target_visualstate, PUSH_TO_HISTORY);
   });
 }
 
@@ -69,13 +82,7 @@ function update_contributions_page(raw_json, participant_id, track) {
   $("#participant_track").text(TRACKS[participant.track]);
   $("#participant_contrib_count").text(participant.contrib_count);
   $("#participant_overall_score").text(participant.overall_score);
-  var ajax_options = {
-    type: "GET",
-    url: "/data/" + participant.file + "?" + Math.round(new Date().getTime()),
-    dataType: "text",
-    success: update_contributions_table
-  };
-  $.ajax(ajax_options);
+  ajax_update("/data/" + participant.file + "?", update_contributions_table, []);
 }
 
 function navigate(visualstate, push) {
@@ -84,13 +91,7 @@ function navigate(visualstate, push) {
     $(".participant").remove();
 
     var track = visualstate.substring(7);
-    var ajax_options = {
-      type: "GET",
-      url: "/data/generated/global_stats.json?" + Math.round(new Date().getTime()),
-      dataType: "text",
-      success: function(raw_json) { update_participants_table(raw_json, track); }
-    };
-    $.ajax(ajax_options);
+    ajax_update("/data/generated/global_stats.json?", update_participants_table, [track]);
   }
 
   if (visualstate.substring(0,13) === "#participant_") {
@@ -104,13 +105,7 @@ function navigate(visualstate, push) {
 
     var participant_id = visualstate.substring(1,16);
     var track          = visualstate.substring(17);
-    var ajax_options = {
-      type: "GET",
-      url: "/data/generated/global_stats.json?" + Math.round(new Date().getTime()),
-      dataType: "text",
-      success: function(raw_json) { update_contributions_page(raw_json, participant_id, track); }
-    };
-    $.ajax(ajax_options);
+    ajax_update("/data/generated/global_stats.json?", update_contributions_page, [participant_id, track]);
   }
 
   $(".visualstate").hide();
@@ -163,6 +158,29 @@ $(window).on("popstate", function(event) {
   if (typeof event.state === "string") {
     $(".visualstate").hide();
     $(event.state).css({"display": "block", "opacity": 0}).animate({"opacity": 1}, 250);
+
+    var hash = window.location.hash;
+    if (hash.substring(0,6) === "#track") {
+      var track = hash.split("#track_")[1];
+      if ($("#" + track + "_table tr").length == 1) {
+        // if the participants table is empty
+        ajax_update("/data/generated/global_stats.json?", update_participants_table, [track]);
+      }
+    }
+
+    if (hash.substring(0,13) === "#participant_") {
+      $("#participant_error").hide();
+      $("#participant_success").hide();
+      $("#participant_full_name").empty();
+      $("#participant_track").empty();
+      $("#participant_contrib_count").empty();
+      $("#participant_overall_score").empty();
+      $(".contribution").remove();
+
+      var participant_id = hash.substring(1,16);
+      var track = hash.substring(17);
+      ajax_update("/data/generated/global_stats.json?", update_contributions_page, [participant_id, track]);
+    }
 
     if ($("#menu").css("display") === "none") {
       $("#uc_heading").hide();
