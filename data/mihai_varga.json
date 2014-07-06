@@ -168,6 +168,11 @@
     "project":          "libcmis",
     "patch_url":        "https://sourceforge.net/p/libcmis/code/ci/afba3c09424069bc4287e84e3564888cab1ec8f6/",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "04/07/2014",
+    "project":          "uc.rosedu.org",
+    "patch_url":        "https://github.com/rosedu/uc.rosedu.org/pull/9/",
+    "difficulty_score": "0",
     "impact_score":     "0" }
  ]
 
