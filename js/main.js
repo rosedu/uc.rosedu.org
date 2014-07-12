@@ -1,3 +1,6 @@
+// This program is licensed under the CC-BY-NC license (with clarifications)
+// For details, please refer to the file main_js.license.md
+
 PUSH_TO_HISTORY        = true
 DO_NOT_PUSH_TO_HISTORY = false
 

@@ -1,3 +1,6 @@
+# This program is licensed under the CC-BY-NC license (with clarifications)
+# For details, please refer to the file synchronize_statistics.license.md
+
 import json
 from copy import deepcopy
 
