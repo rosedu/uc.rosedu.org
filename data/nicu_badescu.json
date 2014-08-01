@@ -39,15 +39,15 @@
     "patch_url":        "https://github.com/mixxxdj/mixxx/pull/283",
     "difficulty_score": "0",
     "impact_score":     "0" },
-  { "date":             "",
-    "project":          "",
-    "patch_url":        "",
-    "difficulty_score": "",
-    "impact_score":     "" },
-  { "date":             "",
-    "project":          "",
-    "patch_url":        "",
-    "difficulty_score": "",
-    "impact_score":     "" }
+  { "date":             "21/07/2014",
+    "project":          "Mixxx",
+    "patch_url":        "https://github.com/mixxxdj/mixxx/pull/291",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "21/07/2014",
+    "project":          "Mixxx",
+    "patch_url":        "https://github.com/mixxxdj/mixxx/pull/300",
+    "difficulty_score": "0",
+    "impact_score":     "0" }
 ]
 
