@@ -102,10 +102,10 @@
     "file":       "andrei_petre.json" },
 
   { "id":         "participant_018",
-    "first_name": "",
-    "last_name":  "",
-    "track":      "",
-    "file":       ".json" },
+    "first_name": "Vlad",
+    "last_name":  "Fulgeanu",
+    "track":      "anul_3",
+    "file":       "vlad_fulgeanu.json" },
 
   { "id":         "participant_019",
     "first_name": "",
