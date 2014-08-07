@@ -108,10 +108,10 @@
     "file":       "vlad_fulgeanu.json" },
 
   { "id":         "participant_019",
-    "first_name": "",
-    "last_name":  "",
-    "track":      "",
-    "file":       ".json" },
+    "first_name": "Andrei Vlad",
+    "last_name":  "Postoaca",
+    "track":      "anul_1",
+    "file":       "andrei_postoaca.json" },
 
   { "id":         "participant_020",
     "first_name": "",
