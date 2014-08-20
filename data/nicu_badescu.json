@@ -53,6 +53,11 @@
     "project":          "Mixxx",
     "patch_url":        "https://github.com/mixxxdj/mixxx/pull/303",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+   { "date":             "20/08/2014",
+    "project":          "Mixxx",
+    "patch_url":        "https://github.com/mixxxdj/mixxx/pull/316",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
 
