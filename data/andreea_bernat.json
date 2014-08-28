@@ -73,5 +73,15 @@
     "project":          "Linux Kernel",
     "patch_url":        "https://lkml.org/lkml/2014/8/22/592",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "27/08/2014",
+    "project":          "Linux Kernel",
+    "patch_url":        "http://patchwork.ozlabs.org/patch/382190/",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "27/08/2014",
+    "project":          "Linux Kernel",
+    "patch_url":        "http://patchwork.ozlabs.org/patch/380603/",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
