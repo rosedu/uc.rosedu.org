@@ -114,10 +114,10 @@
     "file":       "andrei_postoaca.json" },
 
   { "id":         "participant_020",
-    "first_name": "",
-    "last_name":  "",
-    "track":      "",
-    "file":       ".json" },
+    "first_name": "Gabriel",
+    "last_name":  "Ivascu",
+    "track":      "anul_1",
+    "file":       "gabriel_ivascu.json" },
 
   { "id":         "participant_021",
     "first_name": "",
