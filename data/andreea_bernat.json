@@ -83,5 +83,15 @@
     "project":          "Linux Kernel",
     "patch_url":        "http://patchwork.ozlabs.org/patch/380603/",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "31/08/2014",
+    "project":          "Linux Kernel",
+    "patch_url":        "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/commit/?id=6a5d088a923854569e20eac4f3f569926d5911ec",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "31/08/2014",
+    "project":          "Linux Kernel",
+    "patch_url":        "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/commit/?id=69e2a77170f8de7c178343e1a867ba32938a0399",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
