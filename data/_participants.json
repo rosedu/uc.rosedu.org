@@ -35,12 +35,6 @@
     "track":      "anul_4_si_master",
     "file":       "mihai_neacsu.json" },
 
-  { "id":         "participant_007",
-    "first_name": "Matei",
-    "last_name":  "Oprea",
-    "track":      "anul_3",
-    "file":       "matei_oprea.json" },
-
   { "id":         "participant_008",
     "first_name": "Iulian",
     "last_name":  "Matesica",
