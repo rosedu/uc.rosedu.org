@@ -73,5 +73,15 @@
     "project":          "WoUSO",
     "patch_url":        "https://github.com/rosedu/wouso/pull/445",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "01/09/2014",
+    "project":          "WoUSO",
+    "patch_url":        "https://github.com/rosedu/wouso/pull/505",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "01/09/2014",
+    "project":          "WoUSO",
+    "patch_url":        "https://github.com/rosedu/wouso/pull/508",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
