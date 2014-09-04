@@ -44,10 +44,20 @@
     "patch_url":        "https://github.com/privly/privly-chrome/commit/f54dc21c06deb9b0dedbd1bcac0d895f9dee3105",
     "difficulty_score": "0",
     "impact_score":     "0" },
-  { "date":             "",
-    "project":          "",
-    "patch_url":        "",
-    "difficulty_score": "",
-    "impact_score":     "" }
+  { "date":             "04/09/2014",
+    "project":          "privly",
+    "patch_url":        "https://github.com/privly/privly-applications/commit/574af2b9dd704bfa8781e0665ecf80be03a8ef8b",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "04/09/2014",
+    "project":          "privly",
+    "patch_url":        "https://github.com/privly/privly-applications/commit/709de847a65b3dd8b02c7f6c5b24b593490ca181",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "04/09/2014",
+    "project":          "privly",
+    "patch_url":        "https://github.com/privly/privly-applications/commit/e91a3b40b346693b3784596df0ebd01609911b0e",
+    "difficulty_score": "0",
+    "impact_score":     "0" }
 ]
 
