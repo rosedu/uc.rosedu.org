@@ -98,5 +98,10 @@
     "project":          "Linux Kernel",
     "patch_url":        "https://lkml.org/lkml/2014/9/2/217",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "05/09/2014",
+    "project":          "Linux Kernel",
+    "patch_url":        "https://lkml.org/lkml/2014/9/5/39",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
