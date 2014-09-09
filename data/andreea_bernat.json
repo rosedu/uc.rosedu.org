@@ -103,5 +103,15 @@
     "project":          "Linux Kernel",
     "patch_url":        "https://lkml.org/lkml/2014/9/5/39",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "09/09/2014",
+    "project":          "Linux Kernel",
+    "patch_url":        "http://permalink.gmane.org/gmane.linux.kernel/1783294",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "09/09/2014",
+    "project":          "Linux Kernel",
+    "patch_url":        "http://permalink.gmane.org/gmane.linux.kernel/1783313",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
