@@ -113,5 +113,10 @@
     "project":          "Linux Kernel",
     "patch_url":        "http://permalink.gmane.org/gmane.linux.kernel/1783313",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "11/09/2014",
+    "project":          "Linux Kernel",
+    "patch_url":        "https://patchwork.kernel.org/patch/4765301/",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
