@@ -173,5 +173,15 @@
     "project":          "privly",
     "patch_url":        "https://github.com/privly/privly-applications/commit/700cfbfe5b797944ca6709a363cf6edbd7090141",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "13/09/2014",
+    "project":          "privly",
+    "patch_url":        "https://github.com/privly/privly-applications/pull/94",
+    "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "13/09/2014",
+    "project":          "privly",
+    "patch_url":        "https://github.com/privly/privly-applications/pull/95",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
