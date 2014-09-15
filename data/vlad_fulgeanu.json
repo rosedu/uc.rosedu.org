@@ -183,5 +183,10 @@
     "project":          "privly",
     "patch_url":        "https://github.com/privly/privly-applications/pull/95",
     "difficulty_score": "0",
+    "impact_score":     "0" },
+  { "date":             "15/09/2014",
+    "project":          "privly",
+    "patch_url":        "https://github.com/privly/privly-chrome/pull/63",
+    "difficulty_score": "0",
     "impact_score":     "0" }
 ]
