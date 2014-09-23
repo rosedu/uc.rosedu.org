@@ -2,15 +2,7 @@
 # For details, please refer to the file synchronize_statistics.license.md
 
 import json
-import sys
 from copy import deepcopy
-
-TRACKS = ['anul_1','anul_2','anul_3','anul_4_si_master']
-
-global_link_to_file_dictionary = {}
-
-class FileContentsNotInJSONFormatError(Exception):
-    pass
 
 def read_raw_json(file_handle):
 
