@@ -1,0 +1,34 @@
+------------------------
+    Box with picture
+------------------------
+.picture-box {
+  background:url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
+  background-position: center -100px;
+  background-size: cover;
+}
+
+.picture-box .picture-canvas {
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.picture-box .container {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.picture-box h1 {
+  font-size: 48px;
+  color: #fff;
+  line-height: 55px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.picture-box p {
+  font-size: 24px;
+  color: #e7e7e7;
+  line-height: 30px;
+  font-style: italic;
+}
