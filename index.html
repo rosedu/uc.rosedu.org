@@ -19,6 +19,28 @@
     <link href="assets/css/stylesheet.css" rel="stylesheet">
 
   </head>
-  <body background="assets/images/rosedu_background.png">
+  <body>
+    <div class="container" id="menu">
+      <div class="row">
+        <div class="col-md-12">
+          <nav role="navigation">
+            <div class="logo">
+              <a href="/"><img src="assets/images/rosedu_logo.png" alt="ROSEdu"/></a>
+            </div>
+            <ul>
+              <li><a href="#item1">Item1</a></li>
+              <li><a href="#item2">Item2</a></li>
+              <li><a href="#item3">Item3</a></li>
+              <li><a href="#item4">Item4</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      {% include table_item.html %}
+    </div><!-- /container -->
+
   </body>
 </html>
