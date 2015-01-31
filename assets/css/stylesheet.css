@@ -13,11 +13,24 @@ a:hover {
   width: 100%;
   top: 0px;
   z-index: 10;
+  padding-top: 10px;
+}
+
+#logo img {
+  width: 160px;
+  height: 100px;
+  margin-left: 60px;
 }
 
 #main-menu ul {
   list-style: none;
   text-transform: lowercase;
+}
+
+.menu-item {
+  display: inline;
+  font-size: 20px;
+  padding-right: 10px;
 }
 
 /*------------------------
@@ -27,7 +40,7 @@ a:hover {
   display: block;
   position: relative;
   overflow: visible;
-  margin-top: 300px;
+  margin-top: 160px;
 }
 
 /*------------------------
@@ -63,4 +76,22 @@ a:hover {
   color: #e7e7e7;
   line-height: 30px;
   font-style: italic;
+}
+
+/*------------------------
+        Footer
+------------------------*/
+.footer ul {
+  list-style: none;
+  text-transform: lowercase;
+}
+.footer ul li {
+  display: inline;
+  padding-right: 10px;
+}
+
+#rosedu-logo img {
+  width: 220px;
+  height: 140px;
+  margin-left: 60px;
 }
