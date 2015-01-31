@@ -16,10 +16,10 @@ a:hover {
   padding-top: 10px;
 }
 
-#logo img {
+#menu #logo img {
   width: 160px;
   height: 100px;
-  margin-left: 60px;
+  margin-left: 120px;
 }
 
 #main-menu ul {
@@ -41,6 +41,27 @@ a:hover {
   position: relative;
   overflow: visible;
   margin-top: 160px;
+}
+
+/*------------------------
+        Grid
+------------------------*/
+#content .grid {
+    display:block;
+    margin:1em 0;
+    padding:0;
+    list-style: none;
+    font-size:0.9em;
+}
+
+#content .grid > li,
+#content .grid .grid-item {
+    display:block;
+    position: relative;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    text-align: left;
 }
 
 /*------------------------
@@ -87,11 +108,11 @@ a:hover {
 }
 .footer ul li {
   display: inline;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
-#rosedu-logo img {
+.footer #rosedu-logo img {
   width: 220px;
   height: 140px;
-  margin-left: 60px;
+  margin-left: 160px;
 }
