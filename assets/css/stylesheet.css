@@ -1,9 +1,41 @@
-------------------------
+/*-----------------------
+      Main elements
+-----------------------*/
+a:hover {
+  text-decoration: none;
+}
+
+/*-----------------------
+    Main menu
+-----------------------*/
+#menu {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 10;
+}
+
+#main-menu ul {
+  list-style: none;
+  text-transform: lowercase;
+}
+
+/*------------------------
+    Main content
+------------------------*/
+#content {
+  display: block;
+  position: relative;
+  overflow: visible;
+  margin-top: 300px;
+}
+
+/*------------------------
     Box with picture
-------------------------
+------------------------*/
 .picture-box {
   background:url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
-  background-position: center -100px;
+  background-position: center;
   background-size: cover;
 }
 
