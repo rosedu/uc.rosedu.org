@@ -169,6 +169,7 @@ a:hover {
     display: block;
     width: 100%;
     max-width:  100%;
+    height: 180px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -244,6 +245,23 @@ a:hover {
   padding-right: 15px;
 }
 
+#content .footer #rosedu-logo {
+  margin-left: 40px;
+}
+
+#content .footer #rosedu-logo p {
+  color: #90918D;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+#content .footer #rosedu-logo img {
+  width: 140px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+/* Social icons colors */
 #content .footer ul li a:hover .fa-github,
 #content .footer ul li a:hover .fa-slack {
   color: black;
@@ -268,20 +286,4 @@ a:hover {
 
 #content .footer ul li a:hover .fa-rss {
   color: orange;
-}
-
-#content .footer #rosedu-logo {
-  margin-left: 40px;
-}
-
-#content .footer #rosedu-logo p {
-  color: #90918D;
-  font-size: 0.85em;
-  font-style: italic;
-}
-
-#content .footer #rosedu-logo img {
-  width: 140px;
-  height: 80px;
-  margin-left: 30px;
 }
