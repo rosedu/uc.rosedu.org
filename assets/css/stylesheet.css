@@ -44,14 +44,49 @@ a:hover {
 }
 
 /*------------------------
+    Box with picture
+------------------------*/
+#content .picture-box {
+  background:url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#content .picture-box .picture-canvas {
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#content .picture-box .container {
+  padding: 120px 0;
+  text-align: center;
+}
+
+#content .picture-box h1 {
+  font-size: 48px;
+  color: #fff;
+  line-height: 55px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#content  .picture-box p {
+  font-size: 24px;
+  color: #e7e7e7;
+  line-height: 30px;
+  font-style: italic;
+}
+
+/*------------------------
         Grid
 ------------------------*/
 #content .grid {
-    display:block;
-    margin:1em 0;
-    padding:0;
+    display: block;
+    margin: 1em 0;
+    padding: 0;
     list-style: none;
-    font-size:0.9em;
+    font-size: 0.9em;
 }
 
 #content .grid > li,
@@ -65,53 +100,132 @@ a:hover {
 }
 
 /*------------------------
-    Box with picture
+      Featured
 ------------------------*/
-.picture-box {
-  background:url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
-  background-position: center;
-  background-size: cover;
+
+#content .featured .feature-columns {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
 }
 
-.picture-box .picture-canvas {
-  background: rgba(0,0,0,0.6);
-  width: 100%;
-  height: 100%;
+#content .featured .feature-columns .feature-col .thumbnail {
+    background-color: transparent;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid transparent;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 0.85em;
+    text-align: left;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.4s;
 }
 
-.picture-box .container {
-  padding: 120px 0;
-  text-align: center;
+#content .featured .feature-columns .feature-col .thumbnail:hover {
+    background-color: transparent;
+    background-color: rgba(0,0,0,0.3);
+    background: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #000;
+    text-decoration: none;
 }
 
-.picture-box h1 {
-  font-size: 48px;
-  color: #fff;
-  line-height: 55px;
-  font-style: italic;
-  margin-bottom: 20px;
+/* Elements the thumbnail image container */
+#content .feature-columns .feature-col .thumbnail * {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
 }
 
-.picture-box p {
-  font-size: 24px;
-  color: #e7e7e7;
-  line-height: 30px;
-  font-style: italic;
+#content .feature-columns .feature-col .thumbnail:hover * {
+    color:#000;
+    text-shadow:none;
+}
+
+/* Thumbnail image container */
+#content .featured .feature-columns .feature-col .thumbnail .image-container {
+    display: block;
+    width: 100%;
+    max-width:  100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#content .featured .feature-columns .feature-col a.thumbnail .image-container:after,
+#content .featured .feature-columns .feature-col .linked .image-container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/creative_common/more-plus-icon.png) no-repeat center center;
+    background-color: rgba(0,0,0,0.45);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+/* Thumbnail image*/
+#content .featured .feature-columns .feature-col .thumbnail img.item-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#content .featured .feature-columns .feature-col .thumbnail:hover img.item-thumbnail {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* Thumbnail caption */
+#content .featured .feature-columns .feature-col .thumbnail .caption {
+    padding: 10px 12px 11px 12px;
+}
+
+#content .feature-columns .feature-col .thumbnail .caption h1,
+#content .feature-columns .feature-col .thumbnail .caption h2,
+#content .feature-columns .feature-col .thumbnail .caption h3,
+#content .feature-columns .feature-col .thumbnail .caption h4,
+#content .feature-columns .feature-col .thumbnail .caption h5,
+#content .feature-columns .feature-col .thumbnail .caption h6,
+#content .feature-columns .feature-col .thumbnail .caption p {
+    margin:0.5em 0;
+}
+
+/* Modal */
+#content .featured .content-to-populate-in-modal {
+  display: none;
 }
 
 /*------------------------
-        Footer
+        Contact
 ------------------------*/
-.footer ul {
+#content .footer ul {
   list-style: none;
   text-transform: lowercase;
 }
-.footer ul li {
+
+#content .footer ul li {
   display: inline;
   padding-right: 15px;
 }
 
-.footer #rosedu-logo img {
+#content .footer #rosedu-logo img {
   width: 220px;
   height: 140px;
   margin-left: 160px;

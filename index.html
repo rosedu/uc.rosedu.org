@@ -15,8 +15,12 @@
     <!-- font awesome -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- styles for this template -->
+    <!-- Jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Custom stuff -->
     <link href="assets/css/stylesheet.css" rel="stylesheet">
+    <script src="assets/js/core.js"></script>
 
   </head>
   <body>
@@ -28,14 +32,18 @@
         <div class="col-md-6" id="main-menu">
           <ul class="navbar">
             <li class="menu-item"><i class="fa fa-terminal"></i></li>
-            <li class="menu-item"><a href="#item1">Item1</a></li>
-            <li class="menu-item"><a href="#item2">Item2</a></li>
+            <li class="menu-item"><a href="#item1">Box</a>;</li>
+            <li class="menu-item"><a href="#item2">Grid</a>;</li>
+            <li class="menu-item"><a href="#item3">Featured</a>;</li>
+            <li class="menu-item"><a href="#contact">Contact</a>;</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="clearfix" id="content">
+
+      <!-- picture box -->
       <article class="picture-box" id="item1">
         <div class="picture-canvas">
           <div class="container">
@@ -47,78 +55,146 @@
             </div>
           </div>
         </div>
-      </article><!-- /picture_box_item -->
+      </article><!-- /picture_box -->
 
+      <!-- grid -->
       <article class="grid" id="item2">
-        <div class="col-sm-11 col-md-10 pull-right">
-          <h1 class="section-title">Item2</h1>
+        <div class="col-sm-11 pull-right">
+          <h1 class="section-title">Grid</h1>
           <section class="grid row clearfix clearfix-for-2cols">
 
             <!-- grid item -->
             <div class="grid-item col-md-6">
               <div class="item-content clearfix">
-                <span class="icon glyphicon glyphicon-stats"></span>
                 <div class="text-content">
                   <h5>Lorem ipsum dolor sit amet</h5>
                   <p>Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.</p>
                 </div>
-              </div><!-- end: .item-content -->
-            </div><!-- end: .grid-item -->
+              </div>
+            </div><!-- /grid-item -->
 
             <!-- grid item -->
             <div class="grid-item col-md-6">
               <div class="item-content clearfix">
-                <span class="icon glyphicon glyphicon-record"></span>
                 <div class="text-content">
                   <h5>Aliquam adipiscing eros non elit</h5>
                   <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
                 </div>
-              </div><!-- end: .item-content -->
-            </div><!-- end: .grid-item -->
+              </div>
+            </div><!-- /grid-item -->
 
             <!-- grid item -->
             <div class="grid-item col-md-6">
               <div class="item-content clearfix">
-                <span class="icon glyphicon glyphicon-lock"></span>
                 <div class="text-content">
                   <h5>Integer ultricies sed ligula</h5>
                   <p>Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula ligula eget.</p>
                 </div>
-              </div><!-- end: .item-content -->
-            </div><!-- end: .grid-item -->
+              </div>
+            </div><!-- /grid-item -->
 
             <!-- grid item -->
             <div class="grid-item col-md-6">
               <div class="item-content clearfix">
-                <span class="icon glyphicon glyphicon-file"></span>
                 <div class="text-content">
                   <h5>Lorem ipsum dolor sit amet</h5>
                   <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
                 </div>
-              </div><!-- /item-content -->
+              </div>
             </div><!-- /grid-item -->
-          </section><!--/grid row -->
-        </div><!-- .col-sm-11 -->
-      </article> <!-- /.grid -->
+
+          </section>
+        </div>
+      </article><!-- /grid -->
+
+      <!-- featured -->
+      <article class="featured" id="item3" >
+        <div class="content-wrapper clearfix">
+          <div class="col-sm-11 pull-right">
+            <h1 class="section-title">Featured</h1>
+            <!-- feature columns -->
+            <section class="feature-columns row clearfix">
+
+              <article class="feature-col col-md-4">
+                <a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="thumbnail linked">
+                  <div class="image-container">
+                    <img src="assets/images/creative_common/desk.jpeg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                  </div>
+                  <div class="caption">
+                    <h5>Text popup</h5>
+                    <p>his feature contains text content when you open popup.</p>
+                  </div>
+                </a><!-- /thumbnail -->
+
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>Sed scelerisque</h1>
+                  <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.<br/></p>
+                </div><!-- /modal-content-1 -->
+              </article><!-- /featured-item -->
+
+              <article class="feature-col col-md-4">
+                <a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="thumbnail linked">
+                  <div class="image-container">
+                    <img src="assets/images/creative_common/tools.jpeg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                  </div>
+                  <div class="caption">
+                    <h5>Text popup</h5>
+                    <p>This feature contains generic image and text content when you open popup.</p>
+                  </div>
+                </a><!-- /thumbnail -->
+
+                <div class="content-to-populate-in-modal" id="modal-content-2">
+                  <img data-img-src="assets/images/creative_common/desk.jpeg" class="lazy full-width" alt="Lorem Ipsum">
+                  <h1>Sed scelerisque</h1>
+                  <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
+                  <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                  <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                </div><!-- /modal-content2 -->
+              </article><!-- /featured-item -->
+
+              <article class="feature-col col-md-4">
+                <a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="thumbnail linked">
+                  <div class="image-container">
+                    <img src="assets/images/creative_common/cameras.jpeg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                  </div>
+                  <div class="caption">
+                    <h5>Text popup</h5>
+                    <p>This feature contains generic image and text content when you open popup.</p>
+                  </div>
+                </a><!-- /thumbnail -->
+
+                <div class="content-to-populate-in-modal" id="modal-content-3">
+                  <img data-img-src="assets/images/creative_common/desk.jpeg" class="lazy full-width" alt="Lorem Ipsum">
+                  <h1>Sed scelerisque</h1>
+                  <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
+                  <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                  <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                </div><!-- /modal-content3 -->
+              </article><!-- /featured-item -->
+
+            </section><!-- /feature-columns -->
+          </div>
+        </div>
+      </article><!-- /featured -->
+
+      <!-- contact -->
+      <article class="footer" id="contact">
+        <div class="row">
+          <div class="col-md-6" id="rosedu-logo">
+            <a href="http://www.rosedu.org" target="_blank"><img src="assets/images/rosedu_logo_transparent.png" alt="ROSEdu"/></a>
+          </div>
+          <div class="col-md-6">
+            <ul class="navbar">
+              <li><a href="#" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </article><!-- /footer -->
 
     </section><!-- /content -->
-
-    <section class="footer">
-      <div class="row">
-        <div class="col-md-6" id="rosedu-logo">
-          <a href="http://www.rosedu.org" target="_blank"><img src="assets/images/rosedu_logo_transparent.png" alt="ROSEdu"/></a>
-        </div>
-        <div class="col-md-6">
-          <ul class="navbar">
-            <li><a href="#" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </section><!-- /footer -->
-
   </body>
 </html>
