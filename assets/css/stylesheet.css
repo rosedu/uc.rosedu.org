@@ -26,14 +26,15 @@ a:hover {
 #menu #logo img {
   width: 100px;
   height: 60px;
-  margin-left: 130px;
+  margin-top: 5px;
+  margin-left: 140px;
 }
 
 #main-menu ul {
   list-style: none;
   text-transform: lowercase;
-  margin-right: 30px;
   margin-top: 15px;
+  margin-right: 20px;
 }
 
 #main-menu ul li {
@@ -61,7 +62,7 @@ a:hover {
     Box with picture
 ------------------------*/
 #content .picture-box {
-  background:url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
+  background: url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
   background-position: center;
   background-size: cover;
 }
@@ -231,34 +232,45 @@ a:hover {
 
 #content .footer {
   width: 100%;
-  height: 120px;
+  height: 320px;
 }
 
-#content .footer ul {
-  list-style: none;
-  text-transform: lowercase;
-  margin-top: 40px;
+#content .footer #contact-banner {
+  height: 30px;
+  background: url(../images/contact_banner.png) center;
+  background-size: 120px;
 }
 
-#content .footer ul li {
-  display: inline;
-  padding-right: 15px;
+#content .footer #rosedu-logo,
+#content .footer #social-icons,
+#content .footer #hacked-with-love {
+  margin-top: 100px;
 }
 
-#content .footer #rosedu-logo {
-  margin-left: 40px;
-}
-
+/* ROSEdu Logo */
 #content .footer #rosedu-logo p {
   color: #90918D;
   font-size: 0.85em;
   font-style: italic;
+  margin-left: 10px;
 }
 
 #content .footer #rosedu-logo img {
   width: 140px;
   height: 80px;
   margin-left: 30px;
+}
+
+/* Social icons list */
+#content .footer ul {
+  list-style: none;
+  text-transform: lowercase;
+  margin-top: 50px;
+}
+
+#content .footer ul li {
+  display: inline;
+  padding-right: 15px;
 }
 
 /* Social icons colors */
@@ -286,4 +298,19 @@ a:hover {
 
 #content .footer ul li a:hover .fa-rss {
   color: orange;
+}
+
+/* hacked with love */
+#content .footer #hacked-with-love {
+  padding-top: 50px;
+  padding-left: 80px;
+}
+
+#content .footer #hacked-with-love p {
+  font-size: 1.2em;
+}
+
+#content .footer #hacked-with-love img {
+  width: 18px;
+  height: 15px;
 }
