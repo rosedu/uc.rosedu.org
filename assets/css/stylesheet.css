@@ -1,8 +1,13 @@
 /*-----------------------
       Main elements
 -----------------------*/
+a {
+  color: #90918D;
+}
+
 a:hover {
   text-decoration: none;
+  color: #90918D;
 }
 
 /*-----------------------
@@ -11,23 +16,27 @@ a:hover {
 #menu {
   position: fixed;
   width: 100%;
+  height: 80px;
   top: 0px;
   z-index: 10;
   padding-top: 10px;
+  background-color: white;
 }
 
 #menu #logo img {
-  width: 160px;
-  height: 100px;
-  margin-left: 120px;
+  width: 100px;
+  height: 60px;
+  margin-left: 130px;
 }
 
 #main-menu ul {
   list-style: none;
   text-transform: lowercase;
+  margin-right: 30px;
+  margin-top: 15px;
 }
 
-.menu-item {
+#main-menu ul li {
   display: inline;
   font-size: 20px;
   padding-right: 10px;
@@ -40,7 +49,12 @@ a:hover {
   display: block;
   position: relative;
   overflow: visible;
-  margin-top: 160px;
+  margin-top: 80px;
+  padding-top: 10px;
+}
+
+#content .section-title {
+  color: #90918D;
 }
 
 /*------------------------
@@ -65,7 +79,6 @@ a:hover {
 
 #content .picture-box h1 {
   font-size: 48px;
-  color: #fff;
   line-height: 55px;
   font-style: italic;
   margin-bottom: 20px;
@@ -147,7 +160,7 @@ a:hover {
 }
 
 #content .feature-columns .feature-col .thumbnail:hover * {
-    color:#000;
+    color: #000;
     text-shadow:none;
 }
 
@@ -171,7 +184,6 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(../images/creative_common/more-plus-icon.png) no-repeat center center;
     background-color: rgba(0,0,0,0.45);
     opacity: 0;
     filter: alpha(opacity=0);
@@ -215,9 +227,16 @@ a:hover {
 /*------------------------
         Contact
 ------------------------*/
+
+#content .footer {
+  width: 100%;
+  height: 120px;
+}
+
 #content .footer ul {
   list-style: none;
   text-transform: lowercase;
+  margin-top: 40px;
 }
 
 #content .footer ul li {
@@ -225,8 +244,44 @@ a:hover {
   padding-right: 15px;
 }
 
+#content .footer ul li a:hover .fa-github,
+#content .footer ul li a:hover .fa-slack {
+  color: black;
+}
+
+#content .footer ul li a:hover .fa-facebook {
+  color: #3b5999;
+}
+
+#content .footer ul li a:hover .fa-google-plus,
+#content .footer ul li a:hover .fa-youtube {
+  color: #d34836;
+}
+
+#content .footer ul li a:hover .fa-twitter {
+  color: #55acee;
+}
+
+#content .footer ul li a:hover .fa-instagram {
+  color: #517fa4;
+}
+
+#content .footer ul li a:hover .fa-rss {
+  color: orange;
+}
+
+#content .footer #rosedu-logo {
+  margin-left: 40px;
+}
+
+#content .footer #rosedu-logo p {
+  color: #90918D;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
 #content .footer #rosedu-logo img {
-  width: 220px;
-  height: 140px;
-  margin-left: 160px;
+  width: 140px;
+  height: 80px;
+  margin-left: 30px;
 }
