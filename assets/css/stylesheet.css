@@ -1,0 +1,289 @@
+/*-----------------------
+      Main elements
+-----------------------*/
+a {
+  color: #90918D;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #90918D;
+}
+
+/*-----------------------
+    Main menu
+-----------------------*/
+#menu {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0px;
+  z-index: 10;
+  padding-top: 10px;
+  background-color: white;
+}
+
+#menu #logo img {
+  width: 100px;
+  height: 60px;
+  margin-left: 130px;
+}
+
+#main-menu ul {
+  list-style: none;
+  text-transform: lowercase;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+#main-menu ul li {
+  display: inline;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+/*------------------------
+    Main content
+------------------------*/
+#content {
+  display: block;
+  position: relative;
+  overflow: visible;
+  margin-top: 80px;
+  padding-top: 10px;
+}
+
+#content .section-title {
+  color: #90918D;
+}
+
+/*------------------------
+    Box with picture
+------------------------*/
+#content .picture-box {
+  background:url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#content .picture-box .picture-canvas {
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#content .picture-box .container {
+  padding: 120px 0;
+  text-align: center;
+}
+
+#content .picture-box h1 {
+  font-size: 48px;
+  line-height: 55px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#content  .picture-box p {
+  font-size: 24px;
+  color: #e7e7e7;
+  line-height: 30px;
+  font-style: italic;
+}
+
+/*------------------------
+        Grid
+------------------------*/
+#content .grid {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9em;
+}
+
+#content .grid > li,
+#content .grid .grid-item {
+    display:block;
+    position: relative;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    text-align: left;
+}
+
+/*------------------------
+      Featured
+------------------------*/
+
+#content .featured .feature-columns {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+#content .featured .feature-columns .feature-col .thumbnail {
+    background-color: transparent;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid transparent;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 0.85em;
+    text-align: left;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+#content .featured .feature-columns .feature-col .thumbnail:hover {
+    background-color: transparent;
+    background-color: rgba(0,0,0,0.3);
+    background: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #000;
+    text-decoration: none;
+}
+
+/* Elements the thumbnail image container */
+#content .feature-columns .feature-col .thumbnail * {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+#content .feature-columns .feature-col .thumbnail:hover * {
+    color: #000;
+    text-shadow:none;
+}
+
+/* Thumbnail image container */
+#content .featured .feature-columns .feature-col .thumbnail .image-container {
+    display: block;
+    width: 100%;
+    max-width:  100%;
+    height: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#content .featured .feature-columns .feature-col a.thumbnail .image-container:after,
+#content .featured .feature-columns .feature-col .linked .image-container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.45);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+/* Thumbnail image*/
+#content .featured .feature-columns .feature-col .thumbnail img.item-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#content .featured .feature-columns .feature-col .thumbnail:hover img.item-thumbnail {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* Thumbnail caption */
+#content .featured .feature-columns .feature-col .thumbnail .caption {
+    padding: 10px 12px 11px 12px;
+}
+
+#content .feature-columns .feature-col .thumbnail .caption h1,
+#content .feature-columns .feature-col .thumbnail .caption h2,
+#content .feature-columns .feature-col .thumbnail .caption h3,
+#content .feature-columns .feature-col .thumbnail .caption h4,
+#content .feature-columns .feature-col .thumbnail .caption h5,
+#content .feature-columns .feature-col .thumbnail .caption h6,
+#content .feature-columns .feature-col .thumbnail .caption p {
+    margin:0.5em 0;
+}
+
+/* Modal */
+#content .featured .content-to-populate-in-modal {
+  display: none;
+}
+
+/*------------------------
+        Contact
+------------------------*/
+
+#content .footer {
+  width: 100%;
+  height: 120px;
+}
+
+#content .footer ul {
+  list-style: none;
+  text-transform: lowercase;
+  margin-top: 40px;
+}
+
+#content .footer ul li {
+  display: inline;
+  padding-right: 15px;
+}
+
+#content .footer #rosedu-logo {
+  margin-left: 40px;
+}
+
+#content .footer #rosedu-logo p {
+  color: #90918D;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+#content .footer #rosedu-logo img {
+  width: 140px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+/* Social icons colors */
+#content .footer ul li a:hover .fa-github,
+#content .footer ul li a:hover .fa-slack {
+  color: black;
+}
+
+#content .footer ul li a:hover .fa-facebook {
+  color: #3b5999;
+}
+
+#content .footer ul li a:hover .fa-google-plus,
+#content .footer ul li a:hover .fa-youtube {
+  color: #d34836;
+}
+
+#content .footer ul li a:hover .fa-twitter {
+  color: #55acee;
+}
+
+#content .footer ul li a:hover .fa-instagram {
+  color: #517fa4;
+}
+
+#content .footer ul li a:hover .fa-rss {
+  color: orange;
+}
