@@ -34,7 +34,7 @@ a:hover {
   list-style: none;
   text-transform: lowercase;
   margin-top: 15px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 #main-menu ul li {
@@ -62,7 +62,7 @@ a:hover {
     Box with picture
 ------------------------*/
 #content .picture-box {
-  background:url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
+  background: url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
   background-position: center;
   background-size: cover;
 }
@@ -232,7 +232,19 @@ a:hover {
 
 #content .footer {
   width: 100%;
-  height: 120px;
+  height: 320px;
+}
+
+#content .footer #contact-banner {
+  height: 30px;
+  background: url(../images/contact_banner.png) center;
+  background-size: 120px;
+}
+
+#content .footer #rosedu-logo,
+#content .footer #social-icons,
+#content .footer #hacked-with-love {
+  margin-top: 100px;
 }
 
 /* ROSEdu Logo */
@@ -240,6 +252,7 @@ a:hover {
   color: #90918D;
   font-size: 0.85em;
   font-style: italic;
+  margin-left: 10px;
 }
 
 #content .footer #rosedu-logo img {
@@ -287,15 +300,17 @@ a:hover {
   color: orange;
 }
 
-#content .footer #made-with-love {
-  margin-top: 50px;
+/* hacked with love */
+#content .footer #hacked-with-love {
+  padding-top: 50px;
+  padding-left: 80px;
 }
 
-#content .footer #made-with-love p {
+#content .footer #hacked-with-love p {
   font-size: 1.2em;
 }
 
-#content .footer #made-with-love img {
+#content .footer #hacked-with-love img {
   width: 18px;
   height: 15px;
 }
