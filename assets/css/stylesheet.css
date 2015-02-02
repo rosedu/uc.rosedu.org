@@ -117,14 +117,16 @@ a:hover {
       Featured
 ------------------------*/
 
-#content .featured .feature-columns {
+#content .featured .feature-columns,
+#content .album .feature-columns {
     display: block;
     margin: 1em 0;
     padding: 0;
     list-style: none;
 }
 
-#content .featured .feature-columns .feature-col .thumbnail {
+#content .featured .feature-columns .feature-col .thumbnail,
+#content .album .feature-columns .feature-col .thumbnail {
     background-color: transparent;
     background-color: rgba(0,0,0,0);
     border: 1px solid transparent;
@@ -195,7 +197,8 @@ a:hover {
     border-radius: 10px;
 }
 /* Thumbnail image*/
-#content .featured .feature-columns .feature-col .thumbnail img.item-thumbnail {
+#content .featured .feature-columns .feature-col .thumbnail img.item-thumbnail,
+#content .album .feature-columns .feature-col .thumbnail img.item-thumbnail {
     width: 100% !important;
     height: auto !important;
     opacity: 1;
