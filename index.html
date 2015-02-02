@@ -22,6 +22,12 @@
     <link href="assets/css/stylesheet.css" rel="stylesheet">
     <script src="assets/js/core.js"></script>
 
+    <!-- Bootstrap modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
   </head>
   <body>
     <section id="menu">
@@ -114,7 +120,7 @@
             <section class="feature-columns row clearfix">
 
               <article class="feature-col col-md-4">
-                <a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="thumbnail linked">
+                <a href="" onclick="populate_and_open_modal(event, '#modal-content-1');" class="thumbnail linked">
                   <div class="image-container">
                     <img src="assets/images/creative_common/desk.jpeg" class="lazy item-thumbnail" alt="Lorem Ipsum">
                   </div>
@@ -124,14 +130,27 @@
                   </div>
                 </a><!-- /thumbnail -->
 
-                <div class="content-to-populate-in-modal" id="modal-content-1">
-                  <h1>Sed scelerisque</h1>
-                  <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.<br/></p>
+                <div class="modal fade" id="modal-content-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img src="assets/images/heart.png" class="col-md-6" alt="Lorem Ipsum">
+                        <h1>Sed scelerisque</h1>
+                      </div>
+                      <div class="modal-body">
+                        <p>This is the body of the modal.<br/></p>
+                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.<br/></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                      </div>
+                    </div>
+                  </div>
                 </div><!-- /modal-content-1 -->
               </article><!-- /featured-item -->
 
               <article class="feature-col col-md-4">
-                <a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="thumbnail linked">
+                <a href="" onclick="populate_and_open_modal(event, '#modal-content-2');" class="thumbnail linked">
                   <div class="image-container">
                     <img src="assets/images/creative_common/tools.jpeg" class="lazy item-thumbnail" alt="Lorem Ipsum">
                   </div>
@@ -141,17 +160,28 @@
                   </div>
                 </a><!-- /thumbnail -->
 
-                <div class="content-to-populate-in-modal" id="modal-content-2">
-                  <img data-img-src="assets/images/creative_common/desk.jpeg" class="lazy full-width" alt="Lorem Ipsum">
-                  <h1>Sed scelerisque</h1>
-                  <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
-                  <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                  <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                <div class="modal fade" id="modal-content-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img src="assets/images/rosedu_logo.png" class="col-md-6" alt="Lorem Ipsum">
+                        <h1>Sed scelerisque</h1>
+                      </div>
+                      <div class="modal-body">
+                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
+                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                      </div>
+                    </div>
+                  </div>
                 </div><!-- /modal-content2 -->
               </article><!-- /featured-item -->
 
               <article class="feature-col col-md-4">
-                <a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="thumbnail linked">
+                <a href="" onclick="populate_and_open_modal(event, '#modal-content-3');" class="thumbnail linked">
                   <div class="image-container">
                     <img src="assets/images/creative_common/cameras.jpeg" class="lazy item-thumbnail" alt="Lorem Ipsum">
                   </div>
@@ -161,12 +191,23 @@
                   </div>
                 </a><!-- /thumbnail -->
 
-                <div class="content-to-populate-in-modal" id="modal-content-3">
-                  <img data-img-src="assets/images/creative_common/desk.jpeg" class="lazy full-width" alt="Lorem Ipsum">
-                  <h1>Sed scelerisque</h1>
-                  <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
-                  <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                  <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                <div class="modal fade" id="modal-content-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img src="assets/images/creative_common/cameras.jpeg" class="col-md-6" alt="Lorem Ipsum">
+                        <h1>Sed scelerisque</h1>
+                      </div>
+                      <div class="modal-body">
+                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
+                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                      </div>
+                    </div>
+                  </div>
                 </div><!-- /modal-content3 -->
               </article><!-- /featured-item -->
 
