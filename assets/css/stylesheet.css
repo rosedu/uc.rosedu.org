@@ -175,6 +175,7 @@ a:hover {
     margin-left: auto;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 #content .featured .feature-columns .feature-col a.thumbnail .image-container:after,
@@ -191,6 +192,7 @@ a:hover {
     filter: alpha(opacity=0);
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
+    border-radius: 10px;
 }
 /* Thumbnail image*/
 #content .featured .feature-columns .feature-col .thumbnail img.item-thumbnail {
@@ -200,7 +202,9 @@ a:hover {
     filter: alpha(opacity=100);
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
+    border-radius: 10px;
 }
+
 #content .featured .feature-columns .feature-col .thumbnail:hover img.item-thumbnail {
     opacity: 0.8;
     filter: alpha(opacity=80);
@@ -221,9 +225,31 @@ a:hover {
     margin:0.5em 0;
 }
 
-/* Modal */
-#content .featured .content-to-populate-in-modal {
-  display: none;
+/* Opened Modal */
+#content .featured .modal .modal-dialog {
+  min-width: 40%;
+  min-height: 60%;
+  max-width: 60%;
+  max-height: 80%;
+}
+
+#content .featured .modal .modal-dialog .modal-header {
+  padding: 4%;
+}
+
+#content .featured .modal .modal-dialog .modal-body {
+  padding: 8%;
+}
+
+#content .featured .modal .modal-dialog .modal-header img {
+  margin-top: 20px;
+  margin-left: -20px;
+  max-width: 45%;
+  border-radius: 40px;
+}
+
+#content .featured .modal .modal-dialog #close-modal {
+  background-color: transparent;
 }
 
 /*------------------------
