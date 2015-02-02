@@ -233,10 +233,18 @@ a:hover {
   max-height: 80%;
 }
 
+#content .featured .modal .modal-dialog .modal-header {
+  padding: 4%;
+}
+
+#content .featured .modal .modal-dialog .modal-body {
+  padding: 8%;
+}
+
 #content .featured .modal .modal-dialog .modal-header img {
   margin-top: 20px;
   margin-left: -20px;
-  width: 60%;
+  max-width: 45%;
   border-radius: 40px;
 }
 
