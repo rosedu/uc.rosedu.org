@@ -15,19 +15,19 @@
 - title: Title two
   description: Description for title two
   content: Content for title two
-  image: assets/images/creative_common/desk.jpeg
+  image: assets/images/creative_common/tools.jpeg
   id: 2
 
 - title: Title three
   description: Description for title three
   content: Content for title three
-  image: assets/images/creative_common/desk.jpeg
+  image: assets/images/creative_common/cameras.jpeg
   id: 3
 
 - title: Title four
   description: Description for title four
   content: Content for title four
-  image: assets/images/creative_common/desk.jpeg
+  image: assets/images/creative_common/cameras.jpeg
   id: 4
 
 - title: Title five
@@ -39,5 +39,5 @@
 - title: Title six
   description: Description for title six
   content: Content for title six
-  image: assets/images/creative_common/desk.jpeg
+  image: assets/images/creative_common/tools.jpeg
   id: 6
