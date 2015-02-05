@@ -2,7 +2,6 @@
 # Each item has the following structure:
 # - title: string
 #   image: url/path to an image
-#   id: unique number
 #
 - title: Title one
   image: assets/images/creative_common/desk.jpeg
