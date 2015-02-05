@@ -1,0 +1,26 @@
+<article class="feature-col col-md-4">
+  <a href="" onclick="populate_and_open_modal(event, '#featured-modal-content-{{ item.id }}');" class="thumbnail linked">
+    <div class="image-container">
+      <img src="assets/images/creative_common/desk.jpeg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+    </div>
+    <div class="caption">
+      <h5>{{ item.title }}</h5>
+      <p>{{ item.description }}</p>
+    </div>
+  </a><!-- /thumbnail -->
+
+  <div class="modal fade" id="featured-modal-content-{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="btn pull-right" id="close-modal" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove-circle"></i></button>
+        <div class="modal-header">
+          <img src="assets/images/rosedu_logo.png" class="col-md-6" alt="Lorem Ipsum">
+          <h1>{{ item.title }}</h1>
+        </div>
+        <div class="modal-body">
+          <p>{{ item.content }}<br/></p>
+        </div>
+      </div>
+    </div>
+  </div><!-- /modal-content -->
+</article><!-- /featured-item -->

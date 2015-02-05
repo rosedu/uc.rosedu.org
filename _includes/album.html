@@ -1,0 +1,14 @@
+<!-- album -->
+<article class="album">
+  <div class="content-wrapper clearfix">
+    <div class="col-sm-11 pull-right">
+      <h1 id="sponsors" class="section-heading section-title">Album</h1>
+      <!-- album columns -->
+      <section class="feature-columns row clearfix">
+        {% for item in site.data.albums %}
+          {% include album_item.html %}
+        {% endfor %}
+      </section><!-- /album-columns -->
+    </div>
+  </div>
+</article><!-- /album -->
