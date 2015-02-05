@@ -1,0 +1,43 @@
+# Define book type elements data.
+# Each item has the following structure:
+# - title: string
+#   description: short text
+#   content: text
+#   image: url/path to an image
+#   id: unique number
+#
+- title: Title one
+  description: Description for title one
+  content: Content for title one
+  image: assets/images/creative_common/desk.jpeg
+  id: 1
+
+- title: Title two
+  description: Description for title two
+  content: Content for title two
+  image: assets/images/creative_common/desk.jpeg
+  id: 2
+
+- title: Title three
+  description: Description for title three
+  content: Content for title three
+  image: assets/images/creative_common/desk.jpeg
+  id: 3
+
+- title: Title four
+  description: Description for title four
+  content: Content for title four
+  image: assets/images/creative_common/desk.jpeg
+  id: 4
+
+- title: Title five
+  description: Description for title five
+  content: Content for title five
+  image: assets/images/creative_common/desk.jpeg
+  id: 5
+
+- title: Title six
+  description: Description for title six
+  content: Content for title six
+  image: assets/images/creative_common/desk.jpeg
+  id: 6
