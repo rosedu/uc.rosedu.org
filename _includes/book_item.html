@@ -1,0 +1,24 @@
+<article class="feature-col col-md-2">
+<a href="" onclick="populate_and_open_modal(event, '#book-modal-content-{{ item.id }}');" class="thumbnail linked">
+  <div class="image-container">
+    <img src="assets/images/creative_common/person.jpeg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+  </div>
+  <div class="caption">
+    <h5>{{ item.title }}</h5>
+  </div>
+</a><!-- /thumbnail -->
+
+<div class="modal fade" id="book-modal-content-{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button class="btn pull-right" id="close-modal" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove-circle"></i></button>
+      <div class="modal-header">
+        <h3>{{ item.title }}</h3>
+      </div>
+      <div class="modal-body">
+        <p>{{ item.content }}</p>
+      </div>
+    </div>
+  </div>
+</div><!-- /modal-content -->
+</article><!-- /book-item -->

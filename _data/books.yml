@@ -1,0 +1,29 @@
+# Define book type elements data.
+# Each item has the following structure:
+# - title: string
+#   content: text
+#   id: unique number
+#
+- title: Title one
+  content: Content for title one
+  id: 1
+
+- title: Title two
+  content: Content for title two
+  id: 2
+
+- title: Title three
+  content: Content for title three
+  id: 3
+
+- title: Title four
+  content: Content for title four
+  id: 4
+
+- title: Title five
+  content: Content for title five
+  id: 5
+
+- title: Title six
+  content: Content for title six
+  id: 6
