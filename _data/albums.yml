@@ -1,0 +1,14 @@
+# Define album type elements data.
+# Each item has the following structure:
+# - title: string
+#   image: url/path to an image
+#   id: unique number
+#
+- title: Title one
+  image: assets/images/creative_common/desk.jpeg
+
+- title: Title two
+  image: assets/images/creative_common/tools.jpeg
+
+- title: Title three
+  image: assets/images/creative_common/cameras.jpeg
