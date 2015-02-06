@@ -139,6 +139,39 @@ a:hover {
 }
 
 /*------------------------
+    Form box
+------------------------*/
+#content .form-box {
+  background: url(../images/creative_common/desk.jpeg) 50% 0 no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#content .form-box .form-canvas {
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#content .form-box .container {
+  padding: 120px 0;
+  text-align: center;
+}
+
+#content .form-box h1 {
+  font-size: 48px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+#content  .form-box p {
+  font-size: 20px;
+  color: #e7e7e7;
+  line-height: 30px;
+  font-style: italic;
+}
+
+/*------------------------
         Grid
 ------------------------*/
 #content .grid {

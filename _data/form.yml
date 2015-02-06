@@ -1,0 +1,11 @@
+# Define form type elements data.
+# It has the following structure:
+# - title: string
+#   content: text
+#   url: URL to form
+#   url_title: button title for URL
+#
+- title: Apply for this event
+  content: The registration is opened until Monday
+  url: http://drive.google.com
+  url_title: Apply
