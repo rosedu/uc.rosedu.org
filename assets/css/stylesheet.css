@@ -1,13 +1,9 @@
 /*-----------------------
       Main elements
 -----------------------*/
-a {
+a, a:hover, a:link, a:visited {
   color: #90918D;
-}
-
-a:hover {
   text-decoration: none;
-  color: #90918D;
 }
 
 .col-sm-11 {

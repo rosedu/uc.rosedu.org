@@ -1,0 +1,14 @@
+# Main menu configurable items.
+#
+- logo: assets/images/rosedu_logo_transparent.png
+  title: ROSEdu
+  section_one_id: gridId
+  section_one_name: Grid
+  section_two_id: featuredId
+  section_two_name: Featured
+  section_three_id: formId
+  section_three_name: Form
+  section_four_id: albumId
+  section_four_name: Album
+  section_five_id: bookId
+  section_five_name: book
