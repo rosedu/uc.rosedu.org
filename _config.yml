@@ -1,0 +1,16 @@
+# All config data
+logo: assets/images/rosedu_logo_transparent.png
+title: ROSEdu
+grid_section_id: gridId
+grid_section_name: Grid
+featured: featuredId
+featured_section_name: Featured
+form_section_id: formId
+form_section_name: Form
+album_section_id: albumId
+album_section_name: Album
+book_section_id: bookId
+book_section_name: book
+
+# Exclude metadata and development time dependencies
+exclude: [README.md, LICENSE]
