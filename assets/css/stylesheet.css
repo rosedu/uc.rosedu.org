@@ -1,15 +1,13 @@
-@base: #90918D;
-
 /*-----------------------
       Main elements
 -----------------------*/
 a {
-  color: @base;
+  color: #90918D;
 }
 
 a:hover {
   text-decoration: none;
-  color: @base;
+  color: #90918D;
 }
 
 .unselectable {
@@ -73,7 +71,7 @@ a:hover {
 }
 
 #content .section-title {
-  color: @base;
+  color: #90918D;
 }
 
 
@@ -342,7 +340,7 @@ a:hover {
 
 /* ROSEdu Logo */
 #content .footer #rosedu-logo p {
-  color: @base;
+  color: #90918D;
   font-size: 0.85em;
   font-style: italic;
   margin-left: 10px;
