@@ -10,6 +10,10 @@ a:hover {
   color: #90918D;
 }
 
+.col-sm-11 {
+  margin-left: 80px;
+}
+
 .unselectable {
   -webkit-user-select: none; /* Chrome/Safari */
   -moz-user-select: none; /* Firefox */
@@ -43,14 +47,14 @@ a:hover {
   width: 100px;
   height: 60px;
   margin-top: 5px;
-  margin-left: 140px;
+  margin-left: 95px;
 }
 
 #main-menu ul {
   list-style: none;
   text-transform: lowercase;
   margin-top: 15px;
-  margin-right: 20px;
+  margin-right: 60px;
 }
 
 #main-menu ul li {
