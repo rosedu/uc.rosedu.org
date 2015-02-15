@@ -8,12 +8,12 @@
     <div class="col-md-6" id="main-menu">
       <ul class="navbar pull-right">
         <li><i class="fa fa-terminal"></i></li>
-        <li><a href="#{{ item.section_one_id }}">{{ item.section_one_name }}</a>;</li>
-        <li><a href="#{{ item.section_two_id }}">{{ item.section_two_name }}</a>;</li>
-        <li><a href="#{{ item.section_three_id }}">{{ item.section_three_name }}</a>;</li>
-        <li><a href="#{{ item.section_four_id }}">{{ item.section_four_name }}</a>;</li>
-        <li><a href="#{{ item.section_five_id }}">{{ item.section_five_name }}</a>;</li>
-        <li><a href="#contact">Contact</a>;</li>
+        <li><a href="#{{ item.section_one_id }}" onclick="scroll_to(event, '#{{ item.section_one_id }}');">{{ item.section_one_name }}</a>;</li>
+        <li><a href="#{{ item.section_two_id }}" onclick="scroll_to(event, '#{{ item.section_two_id }}');">{{ item.section_two_name }}</a>;</li>
+        <li><a href="#{{ item.section_three_id }}" onclick="scroll_to(event, '#{{ item.section_three_id }}');">{{ item.section_three_name }}</a>;</li>
+        <li><a href="#{{ item.section_four_id }}" onclick="scroll_to(event, '#{{ item.section_four_id }}');">{{ item.section_four_name }}</a>;</li>
+        <li><a href="#{{ item.section_five_id }}" onclick="scroll_to(event, '#{{ item.section_five_id }}');">{{ item.section_five_name }}</a>;</li>
+        <li><a href="#contact" onclick="scroll_to(event, '#contact');">Contact</a>;</li>
       </ul>
     </div>
   </div>
