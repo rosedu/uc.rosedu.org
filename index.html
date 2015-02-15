@@ -2,9 +2,25 @@
 layout: default
 ---
 {% include picture_box.html %}
+
+{% if site.grid_section_id %}
 {% include grid.html %}
+{% endif %}
+
+{% if site.featured_section_id %}
 {% include featured.html %}
+{% endif %}
+
+{% if site.form_section_id %}
 {% include form.html %}
+{% endif %}
+
+{% if site.book_section_id %}
 {% include book.html %}
+{% endif %}
+
+{% if site.album_section_id %}
 {% include album.html %}
+{% endif %}
+
 {% include contact.html %}
