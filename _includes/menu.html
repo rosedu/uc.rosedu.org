@@ -16,11 +16,11 @@
         {% if site.form_section_id %}
           <li><a href="#{{ site.form_section_id }}" onclick="scroll_to(event, '#{{ site.form_section_id }}');">{{ site.form_section_name }}</a>;</li>
         {% endif %}
-        {% if site.album_section_id %}
-          <li><a href="#{{ site.album_section_id }}" onclick="scroll_to(event, '#{{ site.album_section_id }}');">{{ site.album_section_name }}</a>;</li>
-        {% endif %}
         {% if site.book_section_id %}
           <li><a href="#{{ site.book_section_id }}" onclick="scroll_to(event, '#{{ site.book_section_id }}');">{{ site.book_section_name }}</a>;</li>
+        {% endif %}
+        {% if site.album_section_id %}
+          <li><a href="#{{ site.album_section_id }}" onclick="scroll_to(event, '#{{ site.album_section_id }}');">{{ site.album_section_name }}</a>;</li>
         {% endif %}
 
         <li><a href="#contact" onclick="scroll_to(event, '#contact');">Contact</a>;</li>

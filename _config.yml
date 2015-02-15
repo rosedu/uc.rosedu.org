@@ -3,7 +3,7 @@ logo: assets/images/rosedu_logo_transparent.png
 title: ROSEdu
 grid_section_id: gridId
 grid_section_name: Grid
-featured: featuredId
+featured_section_id: featuredId
 featured_section_name: Featured
 form_section_id: formId
 form_section_name: Form
