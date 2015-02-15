@@ -1,22 +1,30 @@
-{% for item in site.data.menu %}
-
 <section id="menu">
   <div class="row">
     <div class="col-md-6" id="logo">
-      <a href="#"><img src={{ item.logo }} alt={{ item.title }}/></a>
+      <a href="#"><img src="{{ site.logo }}" alt="{{ site.title }}"/></a>
     </div>
     <div class="col-md-6" id="main-menu">
       <ul class="navbar pull-right">
         <li><i class="fa fa-terminal"></i></li>
-        <li><a href="#{{ item.section_one_id }}" onclick="scroll_to(event, '#{{ item.section_one_id }}');">{{ item.section_one_name }}</a>;</li>
-        <li><a href="#{{ item.section_two_id }}" onclick="scroll_to(event, '#{{ item.section_two_id }}');">{{ item.section_two_name }}</a>;</li>
-        <li><a href="#{{ item.section_three_id }}" onclick="scroll_to(event, '#{{ item.section_three_id }}');">{{ item.section_three_name }}</a>;</li>
-        <li><a href="#{{ item.section_four_id }}" onclick="scroll_to(event, '#{{ item.section_four_id }}');">{{ item.section_four_name }}</a>;</li>
-        <li><a href="#{{ item.section_five_id }}" onclick="scroll_to(event, '#{{ item.section_five_id }}');">{{ item.section_five_name }}</a>;</li>
+
+        {% if site.grid_section_id %}
+          <li><a href="#{{ site.grid_section_id }}" onclick="scroll_to(event, '#{{ site.grid_section_id }}');">{{ site.grid_section_name }}</a>;</li>
+        {% endif %}
+        {% if site.featured_section_id %}
+          <li><a href="#{{ site.featured_section_id }}" onclick="scroll_to(event, '#{{ site.featured_section_id }}');">{{ site.featured_section_name }}</a>;</li>
+        {% endif %}
+        {% if site.form_section_id %}
+          <li><a href="#{{ site.form_section_id }}" onclick="scroll_to(event, '#{{ site.form_section_id }}');">{{ site.form_section_name }}</a>;</li>
+        {% endif %}
+        {% if site.book_section_id %}
+          <li><a href="#{{ site.book_section_id }}" onclick="scroll_to(event, '#{{ site.book_section_id }}');">{{ site.book_section_name }}</a>;</li>
+        {% endif %}
+        {% if site.album_section_id %}
+          <li><a href="#{{ site.album_section_id }}" onclick="scroll_to(event, '#{{ site.album_section_id }}');">{{ site.album_section_name }}</a>;</li>
+        {% endif %}
+
         <li><a href="#contact" onclick="scroll_to(event, '#contact');">Contact</a>;</li>
       </ul>
     </div>
   </div>
 </section>
-
-{% endfor %}
