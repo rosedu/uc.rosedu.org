@@ -10,14 +10,6 @@ a, a:hover, a:link, a:visited {
   margin-left: 80px;
 }
 
-.unselectable {
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
-  -o-user-select: none;
-  user-select: none;
-}
-
 .section-heading {
     border-top: 80px solid transparent;
     margin-top: -50px;
