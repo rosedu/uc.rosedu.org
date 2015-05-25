@@ -100,7 +100,6 @@ a, a:hover, a:link, a:visited {
     Box with picture
 ------------------------*/
 #content .picture-box {
-  background: url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
   background-position: center;
   background-size: cover;
 }

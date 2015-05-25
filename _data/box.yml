@@ -1,7 +1,8 @@
-# Define form type elements data.
+# Define picture box type elements data.
 # It has the following structure:
 # - title: string
 #   content: text
 #
 - title: Box with a picture
   content: Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.
+  image: assets/images/creative_common/picture_box.jpeg
