@@ -1,0 +1,17 @@
+<!-- form box -->
+
+{% for item in site.data.form %}
+<article id="{{ site.form_section_id }}" class="form-box">
+  <div class="form-canvas">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="section-title">{{ item.title }}</h2>
+          <p>{{ item.content }}</p>
+          <a class="btn btn-default btn-lg" href="{{ item.url }}" target="_blank">{{ item.url_title }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article><!-- /form-box -->
+{% endfor %}

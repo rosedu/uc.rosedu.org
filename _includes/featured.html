@@ -1,0 +1,14 @@
+<!-- featured -->
+<article class="featured">
+  <div class="content-wrapper clearfix">
+    <div class="col-sm-11">
+      <h1 id="{{ site.featured_section_id }}" class="section-heading section-title">{{ site.featured_section_name }}</h1>
+      <!-- feature columns -->
+      <section class="feature-columns row clearfix">
+        {% for item in site.data.features %}
+          {% include featured_item.html %}
+        {% endfor %}
+      </section><!-- /feature-columns -->
+    </div>
+  </div>
+</article><!-- /featured -->

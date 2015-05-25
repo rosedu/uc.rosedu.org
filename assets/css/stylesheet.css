@@ -1,0 +1,407 @@
+/*-----------------------
+      Main elements
+-----------------------*/
+a, a:hover, a:link, a:visited {
+  color: #90918D;
+  text-decoration: none;
+}
+
+.col-sm-11 {
+  margin-left: 80px;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+
+.section-heading {
+    border-top: 80px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+/*-----------------------
+    Main menu
+-----------------------*/
+#menu {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0px;
+  z-index: 10;
+  padding-top: 10px;
+  background-color: white;
+}
+
+#menu #logo img {
+  width: 100px;
+  height: 60px;
+  margin-top: 5px;
+  margin-left: 95px;
+}
+
+#main-menu ul {
+  list-style: none;
+  text-transform: lowercase;
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+#main-menu ul li {
+  display: inline;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+/*------------------------
+    Main content
+------------------------*/
+#content {
+  display: block;
+  position: relative;
+  overflow: visible;
+  margin-top: 80px;
+  padding-top: 10px;
+}
+
+#content .section-title {
+  color: #90918D;
+}
+
+
+/* -----------------------
+      Opened Modal
+------------------------- */
+#content .modal .modal-dialog {
+  min-width: 40%;
+  min-height: 60%;
+  max-width: 60%;
+  max-height: 80%;
+}
+
+#content .modal .modal-dialog .modal-header {
+  padding: 4%;
+}
+
+#content .modal .modal-dialog .modal-body {
+  padding: 8%;
+}
+
+#content .modal .modal-dialog .modal-header img {
+  margin-top: 20px;
+  margin-left: -20px;
+  max-width: 45%;
+  border-radius: 40px;
+}
+
+#content .modal .modal-dialog #close-modal {
+  background-color: transparent;
+}
+
+/*------------------------
+    Box with picture
+------------------------*/
+#content .picture-box {
+  background: url(../images/creative_common/picture_box.jpeg) 50% 0 no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#content .picture-box .picture-canvas {
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#content .picture-box .container {
+  padding: 120px 0;
+  text-align: center;
+}
+
+#content .picture-box h1 {
+  font-size: 48px;
+  line-height: 55px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#content  .picture-box p {
+  font-size: 24px;
+  color: #e7e7e7;
+  line-height: 30px;
+  font-style: italic;
+}
+
+/*------------------------
+    Form box
+------------------------*/
+#content .form-box {
+  background: url(../images/creative_common/desk.jpeg) 50% 0 no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#content .form-box .form-canvas {
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#content .form-box .container {
+  padding: 120px 0;
+  text-align: center;
+}
+
+#content .form-box h1 {
+  font-size: 48px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+#content  .form-box p {
+  font-size: 20px;
+  color: #e7e7e7;
+  line-height: 30px;
+  font-style: italic;
+}
+
+/*------------------------
+        Grid
+------------------------*/
+#content .grid {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9em;
+}
+
+#content .grid > li,
+#content .grid .grid-item {
+    display:block;
+    position: relative;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    text-align: left;
+}
+
+/*----------------------------
+  General featured elements
+-----------------------------*/
+#content .feature-columns {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+#content .feature-columns .feature-col .thumbnail {
+    background-color: transparent;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid transparent;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 0.85em;
+    text-align: left;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+/* Elements the thumbnail image container */
+#content .feature-columns .feature-col .thumbnail * {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+#content .feature-columns .feature-col .thumbnail:hover * {
+    color: #000;
+    text-shadow:none;
+}
+
+#content .feature-columns .feature-col .thumbnail img.item-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 10px;
+}
+
+#content .feature-columns .feature-col .thumbnail .caption h1,
+#content .feature-columns .feature-col .thumbnail .caption h2,
+#content .feature-columns .feature-col .thumbnail .caption h3,
+#content .feature-columns .feature-col .thumbnail .caption h4,
+#content .feature-columns .feature-col .thumbnail .caption h5,
+#content .feature-columns .feature-col .thumbnail .caption h6,
+#content .feature-columns .feature-col .thumbnail .caption p {
+    margin:0.5em 0;
+}
+
+/*------------------------
+      Featured
+------------------------*/
+
+#content .featured .feature-columns .feature-col .thumbnail:hover {
+    background-color: transparent;
+    background-color: rgba(0,0,0,0.3);
+    background: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #000;
+    text-decoration: none;
+}
+
+/* Thumbnail image container */
+#content .featured .feature-columns .feature-col .thumbnail .image-container {
+    display: block;
+    width: 100%;
+    max-width:  100%;
+    height: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#content .featured .feature-columns .feature-col a.thumbnail .image-container:after,
+#content .featured .feature-columns .feature-col .linked .image-container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.45);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 10px;
+}
+/* Thumbnail image*/
+
+#content .featured .feature-columns .feature-col .thumbnail:hover img.item-thumbnail {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* Thumbnail caption */
+#content .featured .feature-columns .feature-col .thumbnail .caption {
+    padding: 10px 12px 11px 12px;
+}
+
+/*------------------------
+        Book
+------------------------*/
+#content .book .feature-columns .feature-col .thumbnail .image-container img {
+  border-radius: 50%;
+  max-height: 200px;
+  min-height: 100px;
+}
+
+/*------------------------
+        Contact
+------------------------*/
+
+#content .footer {
+  width: 100%;
+  height: 320px;
+}
+
+#content .footer #contact-banner {
+  height: 30px;
+  background: url(../images/contact_banner.png) center;
+  background-size: 120px;
+}
+
+#content .footer #rosedu-logo,
+#content .footer #social-icons,
+#content .footer #hacked-with-love {
+  margin-top: 100px;
+}
+
+/* ROSEdu Logo */
+#content .footer #rosedu-logo p {
+  color: #90918D;
+  font-size: 0.85em;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+#content .footer #rosedu-logo img {
+  width: 140px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+/* Social icons list */
+#content .footer ul {
+  list-style: none;
+  text-transform: lowercase;
+  margin-top: 50px;
+}
+
+#content .footer ul li {
+  display: inline;
+  padding-right: 15px;
+}
+
+/* Social icons colors */
+#content .footer ul li a:hover .fa-github,
+#content .footer ul li a:hover .fa-slack {
+  color: black;
+}
+
+#content .footer ul li a:hover .fa-facebook {
+  color: #3b5999;
+}
+
+#content .footer ul li a:hover .fa-google-plus,
+#content .footer ul li a:hover .fa-youtube {
+  color: #d34836;
+}
+
+#content .footer ul li a:hover .fa-twitter {
+  color: #55acee;
+}
+
+#content .footer ul li a:hover .fa-instagram {
+  color: #517fa4;
+}
+
+#content .footer ul li a:hover .fa-rss {
+  color: orange;
+}
+
+/* hacked with love */
+#content .footer #hacked-with-love {
+  padding-top: 50px;
+  padding-left: 80px;
+}
+
+#content .footer #hacked-with-love p {
+  font-size: 1.2em;
+}
+
+#content .footer #hacked-with-love img {
+  width: 18px;
+  height: 15px;
+}
