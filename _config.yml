@@ -3,10 +3,10 @@ logo: assets/images/uc_logo.png
 title: UpstreamChallenge
 grid_section_id: about
 grid_section_name: About
-#featured_section_id: featuredId
-#featured_section_name: Featured
-form_section_id: formId
-form_section_name: Form
+featured_section_id: projects
+featured_section_name: Projects
+form_section_id: join
+form_section_name: Join
 #album_section_id: albumId
 #album_section_name: Album
 #book_section_id: bookId
