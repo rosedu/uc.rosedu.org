@@ -1,0 +1,14 @@
+<!-- book -->
+<article class="book">
+  <div class="content-wrapper clearfix">
+    <div class="col-sm-11">
+      <h1 id="{{ site.book_section_id }}" class="section-heading section-title">{{ site.book_section_name }}</h1>
+      <!-- book columns -->
+      <section class="feature-columns row clearfix">
+        {% for item in site.data.books %}
+          {% include book_item.html %}
+        {% endfor %}
+      </section><!-- /book-columns -->
+    </div>
+  </div>
+</article><!-- /book -->

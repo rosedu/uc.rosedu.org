@@ -1,0 +1,16 @@
+# Define grid type elements data.
+# Each item has the following structure:
+# - title: string
+#   content: text
+#
+- title: Title one
+  content: Content for title one
+
+- title: Title two
+  content: Content for title two
+
+- title: Title three
+  content: Content for title three
+
+- title: Title four
+  content: Content for title four

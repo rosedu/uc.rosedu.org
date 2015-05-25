@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom stuff -->
+    <link href="assets/css/stylesheet.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <script src="assets/js/scrollTo.js"></script>
+    <script src="assets/js/core.js"></script>
+
+  </head>
+  <body>
+
+  {% include menu.html %}
+
+  <section class="clearfix unselectable" id="content">
+    {{ content }}
+  </section><!-- /content -->
+
+</body>
+</html>
