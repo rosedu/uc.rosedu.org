@@ -5,10 +5,19 @@
       <h1 id="{{ site.featured_section_id }}" class="section-heading section-title">{{ site.featured_section_name }}</h1>
       <!-- feature columns -->
       <section class="feature-columns row clearfix">
-        {% for item in site.data.features %}
-          {% include featured_item.html %}
-        {% endfor %}
-      </section><!-- /feature-columns -->
+
+        <article class="feature-col col-md-12">
+          <a href="" class="thumbnail linked">
+            <div class="image-container">
+              <img src="assets/images/creative_common/notebook.png" class="lazy item-thumbnail" alt="Project">
+            </div>
+            <div class="caption">
+              <h3>Projects will be shown soon.</h3>
+              <p>If you have an Open Source project which you want to enroll/sponsor in the competition, please contact us.</p>
+            </div>
+          </a><!-- /thumbnail -->
+
+      </section> <!-- /feature-columns -->
     </div>
   </div>
 </article><!-- /featured -->

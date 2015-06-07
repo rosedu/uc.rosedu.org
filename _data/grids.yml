@@ -3,14 +3,14 @@
 # - title: string
 #   content: text
 #
-- title: What?
-  content: Upstream Challenge is a competition to help students contribute to Open Source Software and help Romanian communities to increase awareness and the community around their projects.
-
-- title: When?
-  content: The competition will start on July and it will end in September, with a total of 3 months.
+- title: Why?
+  content: Upstream Challenge is a competition to encourage students to contribute to Open Source Software and help Romanian communities to increase awareness and visibility around their projects.
 
 - title: Where?
-  content: You don't have to be present at workshops or something else. You can participate from anywhere, you just have to register your contributions.
+  content: You can be physically anywhere, you just have to register your contributions. But we will organise two hackathons, where we encourge you to participate. There you will have the chance to speak with the mentors, other contestants and ROSEdu members.
+
+- title: When?
+  content: The competition will start on 4th of July and it will end on 4th of October, lasting a total of 3 months.
 
 - title: How?
-  content: The details will be available soon.
+  content: Each contribution to the projects enrolled in the competition will be scored, and at the end of the 3 months each project will announce its winner ( the person with the biggest score). Don't worry, each project has a mentor or more assigned, and you can ask for help, review etc.
